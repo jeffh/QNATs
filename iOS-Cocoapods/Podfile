@@ -1,14 +1,14 @@
 use_frameworks!
 
 target 'iOS-Cocoapods' do
-  pod 'Nimble', path: '../../Nimble'
+  pod 'Nimble', path: '../Vendor/Nimble'
 end
 
 target 'iOS-CocoapodsTests' do
-  pod 'Nimble', path: '../../Nimble'
+  pod 'Nimble', path: '../Vendor/Nimble'
 end
 
 target 'iOS-CocoapodsUITests' do
-  pod 'Nimble', path: '../../Nimble'
+  pod 'Nimble', path: '../Vendor/Nimble'
 end
 
