@@ -1,0 +1,6 @@
+.DS_Store
+Carthage
+Pods
+Cartfile.resolved
+Podfile.lock
+xcuserdata

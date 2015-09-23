@@ -1,0 +1,14 @@
+use_frameworks!
+
+target 'OSX-Cocoapods' do
+  pod 'Nimble', path: '../../Nimble'
+end
+
+target 'OSX-CocoapodsTests' do
+  pod 'Nimble', path: '../../Nimble'
+end
+
+target 'OSX-CocoapodsUITests' do
+  pod 'Nimble', path: '../../Nimble'
+end
+
