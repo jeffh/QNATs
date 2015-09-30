@@ -71,7 +71,7 @@ namespace :ios do
       shell.run("rm -f Cartfile.resolved")
       shell.run("rm -rf Carthage")
       shell.run!("carthage bootstrap")
-      shell.run!("xcodebuild -scheme iOS-Carthage -sdk iphonesimulator test")
+      shell.run!("xcodebuild -scheme iOS-Carthage -sdk iphonesimulator clean test")
     end
   end
 
@@ -81,7 +81,7 @@ namespace :ios do
       shell.run("rm -r Podfile.lock")
       shell.run("rm -rf Pods")
       shell.run!("pod install")
-      shell.run!("xcodebuild -scheme iOS-Cocoapods -workspace iOS-Cocoapods.xcworkspace -sdk iphonesimulator test")
+      shell.run!("xcodebuild -scheme iOS-Cocoapods -workspace iOS-Cocoapods.xcworkspace -sdk iphonesimulator clean test")
     end
   end
 end
@@ -94,7 +94,7 @@ namespace :osx do
       shell.run("rm -f Cartfile.resolved")
       shell.run("rm -rf Carthage")
       shell.run!("carthage bootstrap")
-      shell.run!("xcodebuild -scheme OSX-Carthage test")
+      shell.run!("xcodebuild -scheme OSX-Carthage clean test")
     end
   end
 
@@ -104,7 +104,7 @@ namespace :osx do
       shell.run("rm -r Podfile.lock")
       shell.run("rm -rf Pods")
       shell.run!("pod install")
-      shell.run!("xcodebuild -scheme OSX-Cocoapods -workspace OSX-Cocoapods.xcworkspace test")
+      shell.run!("xcodebuild -scheme OSX-Cocoapods -workspace OSX-Cocoapods.xcworkspace clean test")
     end
   end
 end
