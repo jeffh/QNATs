@@ -31,9 +31,8 @@ class OSX_CocoapodsUITests: XCTestCase {
     
     func testExample() {
         expect(1).to(equal(1))
-
-        let window = XCUIApplication().childrenMatchingType(.Window).elementBoundByIndex(0)
-        let textView = window.childrenMatchingType(.Other).element.childrenMatchingType(.TextView).element
+        
+        let textView = XCUIApplication().windows["Window"].scrollViews.childrenMatchingType(.TextView).element
         expect(textView.value as? String).to(equal("expected to equal <2>, got <1>"))
     }
     

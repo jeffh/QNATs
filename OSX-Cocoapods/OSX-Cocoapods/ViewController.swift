@@ -22,7 +22,8 @@ class ViewController: NSViewController {
         expect(1).to(equal(2))
 
         if let assertion = recorder.assertions.first {
-            textView.insertText(assertion.message.stringValue)
+            let str = NSAttributedString(string: assertion.message.stringValue)
+            textView.textStorage?.setAttributedString(str)
         }
     }
 

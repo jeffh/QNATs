@@ -86,9 +86,20 @@ namespace :ios do
   end
 end
 
+task osx: %[osx:cocoapods]
 namespace :osx do
   task :carthage do
   end
+
+  desc "Runs tests for cocoapods in osx with App BUndle, Unit Test Bundle, UI Test Bundle"
+  task :cocoapods do
+    shell.cd('OSX-Cocoapods', "Testing OSX-Cocoapods") do
+      shell.run("rm -r Podfile.lock")
+      shell.run("rm -rf Pods")
+      shell.run!("pod install")
+      shell.run!("xcodebuild -scheme OSX-Cocoapods -workspace OSX-Cocoapods.xcworkspace test")
+    end
+  end
 end
 
-task default: %w[ios]
+task default: %w[ios osx]
