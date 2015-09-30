@@ -1,14 +1,13 @@
 //
 //  ViewController.swift
-//  OSX-Cocoapods
+//  OSX-Carthage
 //
-//  Created by Jeff Hui on 9/22/15.
+//  Created by Jeff Hui on 9/30/15.
 //  Copyright © 2015 Jeff Hui. All rights reserved.
 //
 
 import Cocoa
 import Nimble
-
 
 class ViewController: NSViewController {
     @IBOutlet var textView: NSTextView!
@@ -29,8 +28,9 @@ class ViewController: NSViewController {
 
     override var representedObject: AnyObject? {
         didSet {
-        // Update the view, if already loaded.
+            // Update the view, if already loaded.
         }
     }
+
 }
 

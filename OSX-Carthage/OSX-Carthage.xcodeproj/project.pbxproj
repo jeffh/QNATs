@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FEE9A6B1BBBD1410014DF82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE9A6A1BBBD1410014DF82 /* AppDelegate.swift */; };
+		1FEE9A6D1BBBD1410014DF82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE9A6C1BBBD1410014DF82 /* ViewController.swift */; };
+		1FEE9A6F1BBBD1410014DF82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FEE9A6E1BBBD1410014DF82 /* Assets.xcassets */; };
+		1FEE9A721BBBD1410014DF82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FEE9A701BBBD1410014DF82 /* Main.storyboard */; };
+		1FEE9A7D1BBBD1410014DF82 /* OSX_CarthageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE9A7C1BBBD1410014DF82 /* OSX_CarthageTests.swift */; };
+		1FEE9A881BBBD1410014DF82 /* OSX_CarthageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE9A871BBBD1410014DF82 /* OSX_CarthageUITests.swift */; };
+		1FEE9A9E1BBBD3850014DF82 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEE9A9D1BBBD3850014DF82 /* Nimble.framework */; settings = {ASSET_TAGS = (); }; };
+		1FEE9A9F1BBBD3880014DF82 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEE9A9D1BBBD3850014DF82 /* Nimble.framework */; };
+		1FEE9AA01BBBD38A0014DF82 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEE9A9D1BBBD3850014DF82 /* Nimble.framework */; };
+		1FEE9AA21BBBD3960014DF82 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1FEE9A9D1BBBD3850014DF82 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FEE9AA41BBBD3F00014DF82 /* Nimble.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 1FEE9A9D1BBBD3850014DF82 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FEE9AA61BBBD3F70014DF82 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1FEE9A9D1BBBD3850014DF82 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FEE9A791BBBD1410014DF82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEE9A5F1BBBD1410014DF82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FEE9A661BBBD1410014DF82;
+			remoteInfo = "OSX-Carthage";
+		};
+		1FEE9A841BBBD1410014DF82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEE9A5F1BBBD1410014DF82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FEE9A661BBBD1410014DF82;
+			remoteInfo = "OSX-Carthage";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1FEE9AA11BBBD38F0014DF82 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1FEE9AA21BBBD3960014DF82 /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FEE9AA31BBBD3EA0014DF82 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1FEE9AA41BBBD3F00014DF82 /* Nimble.framework in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FEE9AA51BBBD3F40014DF82 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1FEE9AA61BBBD3F70014DF82 /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1FEE9A671BBBD1410014DF82 /* OSX-Carthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OSX-Carthage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FEE9A6A1BBBD1410014DF82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1FEE9A6C1BBBD1410014DF82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1FEE9A6E1BBBD1410014DF82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FEE9A711BBBD1410014DF82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1FEE9A731BBBD1410014DF82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FEE9A781BBBD1410014DF82 /* OSX-CarthageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OSX-CarthageTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FEE9A7C1BBBD1410014DF82 /* OSX_CarthageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSX_CarthageTests.swift; sourceTree = "<group>"; };
+		1FEE9A7E1BBBD1410014DF82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FEE9A831BBBD1410014DF82 /* OSX-CarthageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OSX-CarthageUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FEE9A871BBBD1410014DF82 /* OSX_CarthageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSX_CarthageUITests.swift; sourceTree = "<group>"; };
+		1FEE9A891BBBD1410014DF82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FEE9A9D1BBBD3850014DF82 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FEE9A641BBBD1410014DF82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FEE9A9E1BBBD3850014DF82 /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FEE9A751BBBD1410014DF82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FEE9A9F1BBBD3880014DF82 /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FEE9A801BBBD1410014DF82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FEE9AA01BBBD38A0014DF82 /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FEE9A5E1BBBD1410014DF82 = {
+			isa = PBXGroup;
+			children = (
+				1FEE9A9D1BBBD3850014DF82 /* Nimble.framework */,
+				1FEE9A691BBBD1410014DF82 /* OSX-Carthage */,
+				1FEE9A7B1BBBD1410014DF82 /* OSX-CarthageTests */,
+				1FEE9A861BBBD1410014DF82 /* OSX-CarthageUITests */,
+				1FEE9A681BBBD1410014DF82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FEE9A681BBBD1410014DF82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FEE9A671BBBD1410014DF82 /* OSX-Carthage.app */,
+				1FEE9A781BBBD1410014DF82 /* OSX-CarthageTests.xctest */,
+				1FEE9A831BBBD1410014DF82 /* OSX-CarthageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FEE9A691BBBD1410014DF82 /* OSX-Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				1FEE9A6A1BBBD1410014DF82 /* AppDelegate.swift */,
+				1FEE9A6C1BBBD1410014DF82 /* ViewController.swift */,
+				1FEE9A6E1BBBD1410014DF82 /* Assets.xcassets */,
+				1FEE9A701BBBD1410014DF82 /* Main.storyboard */,
+				1FEE9A731BBBD1410014DF82 /* Info.plist */,
+			);
+			path = "OSX-Carthage";
+			sourceTree = "<group>";
+		};
+		1FEE9A7B1BBBD1410014DF82 /* OSX-CarthageTests */ = {
+			isa = PBXGroup;
+			children = (
+				1FEE9A7C1BBBD1410014DF82 /* OSX_CarthageTests.swift */,
+				1FEE9A7E1BBBD1410014DF82 /* Info.plist */,
+			);
+			path = "OSX-CarthageTests";
+			sourceTree = "<group>";
+		};
+		1FEE9A861BBBD1410014DF82 /* OSX-CarthageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1FEE9A871BBBD1410014DF82 /* OSX_CarthageUITests.swift */,
+				1FEE9A891BBBD1410014DF82 /* Info.plist */,
+			);
+			path = "OSX-CarthageUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FEE9A661BBBD1410014DF82 /* OSX-Carthage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FEE9A8C1BBBD1410014DF82 /* Build configuration list for PBXNativeTarget "OSX-Carthage" */;
+			buildPhases = (
+				1FEE9A631BBBD1410014DF82 /* Sources */,
+				1FEE9A641BBBD1410014DF82 /* Frameworks */,
+				1FEE9A651BBBD1410014DF82 /* Resources */,
+				1FEE9AA11BBBD38F0014DF82 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OSX-Carthage";
+			productName = "OSX-Carthage";
+			productReference = 1FEE9A671BBBD1410014DF82 /* OSX-Carthage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FEE9A771BBBD1410014DF82 /* OSX-CarthageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FEE9A8F1BBBD1410014DF82 /* Build configuration list for PBXNativeTarget "OSX-CarthageTests" */;
+			buildPhases = (
+				1FEE9A741BBBD1410014DF82 /* Sources */,
+				1FEE9A751BBBD1410014DF82 /* Frameworks */,
+				1FEE9A761BBBD1410014DF82 /* Resources */,
+				1FEE9AA31BBBD3EA0014DF82 /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FEE9A7A1BBBD1410014DF82 /* PBXTargetDependency */,
+			);
+			name = "OSX-CarthageTests";
+			productName = "OSX-CarthageTests";
+			productReference = 1FEE9A781BBBD1410014DF82 /* OSX-CarthageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1FEE9A821BBBD1410014DF82 /* OSX-CarthageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FEE9A921BBBD1410014DF82 /* Build configuration list for PBXNativeTarget "OSX-CarthageUITests" */;
+			buildPhases = (
+				1FEE9A7F1BBBD1410014DF82 /* Sources */,
+				1FEE9A801BBBD1410014DF82 /* Frameworks */,
+				1FEE9A811BBBD1410014DF82 /* Resources */,
+				1FEE9AA51BBBD3F40014DF82 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FEE9A851BBBD1410014DF82 /* PBXTargetDependency */,
+			);
+			name = "OSX-CarthageUITests";
+			productName = "OSX-CarthageUITests";
+			productReference = 1FEE9A831BBBD1410014DF82 /* OSX-CarthageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FEE9A5F1BBBD1410014DF82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Jeff Hui";
+				TargetAttributes = {
+					1FEE9A661BBBD1410014DF82 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					1FEE9A771BBBD1410014DF82 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 1FEE9A661BBBD1410014DF82;
+					};
+					1FEE9A821BBBD1410014DF82 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 1FEE9A661BBBD1410014DF82;
+					};
+				};
+			};
+			buildConfigurationList = 1FEE9A621BBBD1410014DF82 /* Build configuration list for PBXProject "OSX-Carthage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FEE9A5E1BBBD1410014DF82;
+			productRefGroup = 1FEE9A681BBBD1410014DF82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FEE9A661BBBD1410014DF82 /* OSX-Carthage */,
+				1FEE9A771BBBD1410014DF82 /* OSX-CarthageTests */,
+				1FEE9A821BBBD1410014DF82 /* OSX-CarthageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FEE9A651BBBD1410014DF82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FEE9A6F1BBBD1410014DF82 /* Assets.xcassets in Resources */,
+				1FEE9A721BBBD1410014DF82 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FEE9A761BBBD1410014DF82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FEE9A811BBBD1410014DF82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FEE9A631BBBD1410014DF82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FEE9A6D1BBBD1410014DF82 /* ViewController.swift in Sources */,
+				1FEE9A6B1BBBD1410014DF82 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FEE9A741BBBD1410014DF82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FEE9A7D1BBBD1410014DF82 /* OSX_CarthageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FEE9A7F1BBBD1410014DF82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FEE9A881BBBD1410014DF82 /* OSX_CarthageUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FEE9A7A1BBBD1410014DF82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FEE9A661BBBD1410014DF82 /* OSX-Carthage */;
+			targetProxy = 1FEE9A791BBBD1410014DF82 /* PBXContainerItemProxy */;
+		};
+		1FEE9A851BBBD1410014DF82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FEE9A661BBBD1410014DF82 /* OSX-Carthage */;
+			targetProxy = 1FEE9A841BBBD1410014DF82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1FEE9A701BBBD1410014DF82 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FEE9A711BBBD1410014DF82 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FEE9A8A1BBBD1410014DF82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1FEE9A8B1BBBD1410014DF82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1FEE9A8D1BBBD1410014DF82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "OSX-Carthage/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.OSX-Carthage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1FEE9A8E1BBBD1410014DF82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "OSX-Carthage/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.OSX-Carthage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1FEE9A901BBBD1410014DF82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "OSX-CarthageTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.OSX-CarthageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSX-Carthage.app/Contents/MacOS/OSX-Carthage";
+			};
+			name = Debug;
+		};
+		1FEE9A911BBBD1410014DF82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "OSX-CarthageTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.OSX-CarthageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSX-Carthage.app/Contents/MacOS/OSX-Carthage";
+			};
+			name = Release;
+		};
+		1FEE9A931BBBD1410014DF82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "OSX-CarthageUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.OSX-CarthageUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "OSX-Carthage";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1FEE9A941BBBD1410014DF82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "OSX-CarthageUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.OSX-CarthageUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "OSX-Carthage";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FEE9A621BBBD1410014DF82 /* Build configuration list for PBXProject "OSX-Carthage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FEE9A8A1BBBD1410014DF82 /* Debug */,
+				1FEE9A8B1BBBD1410014DF82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FEE9A8C1BBBD1410014DF82 /* Build configuration list for PBXNativeTarget "OSX-Carthage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FEE9A8D1BBBD1410014DF82 /* Debug */,
+				1FEE9A8E1BBBD1410014DF82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1FEE9A8F1BBBD1410014DF82 /* Build configuration list for PBXNativeTarget "OSX-CarthageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FEE9A901BBBD1410014DF82 /* Debug */,
+				1FEE9A911BBBD1410014DF82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1FEE9A921BBBD1410014DF82 /* Build configuration list for PBXNativeTarget "OSX-CarthageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FEE9A931BBBD1410014DF82 /* Debug */,
+				1FEE9A941BBBD1410014DF82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FEE9A5F1BBBD1410014DF82 /* Project object */;
+}

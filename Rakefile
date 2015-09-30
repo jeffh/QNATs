@@ -88,7 +88,14 @@ end
 
 task osx: %[osx:cocoapods]
 namespace :osx do
+  desc "Runs tests for carthage in osx with App Bundle, Unit Test Bundle, UI Test Bundle"
   task :carthage do
+    shell.cd('OSX-Carthage', "Testing OSX-Carthage") do
+      shell.run("rm -f Cartfile.resolved")
+      shell.run("rm -rf Carthage")
+      shell.run!("carthage bootstrap")
+      shell.run!("xcodebuild -scheme OSX-Carthage test")
+    end
   end
 
   desc "Runs tests for cocoapods in osx with App BUndle, Unit Test Bundle, UI Test Bundle"
