@@ -1,3 +1,0 @@
-[submodule "Vendor/Nimble"]
-	path = Vendor/Nimble
-	url = git@github.com:Quick/Nimble.git
