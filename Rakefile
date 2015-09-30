@@ -86,7 +86,7 @@ namespace :ios do
   end
 end
 
-task osx: %[osx:carthage osx:cocoapods]
+task osx: %w[osx:carthage osx:cocoapods]
 namespace :osx do
   desc "Runs tests for carthage in osx with App Bundle, Unit Test Bundle, UI Test Bundle"
   task :carthage do
