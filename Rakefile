@@ -12,15 +12,22 @@ class Shell
     puts msg if print_types.include? type
   end
 
-  def cd(dir)
-    Dir.chdir(dir) do
-      log :chdirs, "-> in #{dir.colorize(:blue)}"
-      yield
+  def group(name=nil)
+    log :group, "-> #{name}" if name
+    yield
+  end
+
+  def cd(dir, group_name=nil)
+    group(group_name) do
+      Dir.chdir(dir) do
+        log :chdirs, " ~> cd #{dir.colorize(:blue)}"
+        yield
+      end
     end
   end
 
   def run(cmd)
-    log :commands, "-> #{cmd.colorize(:green)}"
+    log :commands, " ~> #{cmd.colorize(:green)}"
     _, stdout, stderr, wait = Open3::popen3 cmd
     out = stdout.read
     err = stderr.read
@@ -33,11 +40,11 @@ class Shell
 
   def run!(cmd)
     status, stdout, stderr = run(cmd)
-    fail_if_error(status, stdout, stderr)
+    fail_if_error(cmd, status, stdout, stderr)
   end
 
   private
-  def fail_if_error(status, stdout, stderr)
+  def fail_if_error(cmd, status, stdout, stderr)
     unless status == 0
       log :errors, stdout unless print_types.include? :stdout
       log :errors, stderr unless print_types.include? :stderr
@@ -49,23 +56,32 @@ class Shell
   end
 end
 
-shell = Shell.new(print_types: [:commands, :chdirs, :stdout, :stderr, :errors])
+shell = Shell.new(print_types: [:group, :errors])
+
+desc "Makes future rake tasks print verbosely"
+task :verbose do
+  shell = Shell.new(print_types: shell.print_types + [:commands, :stdout, :stderr, :chdirs])
+end
 
 task ios: %w[ios:cocoapods ios:carthage]
 namespace :ios do
   desc "Runs tests for carthage in ios with App Bundle, Unit Test Bundle, UI Test Bundle"
   task :carthage do
-    shell.cd('iOS-Carthage') do
+    shell.cd('iOS-Carthage', "Testing iOS-Carthage") do
+      shell.run("rm -f Cartfile.resolved")
+      shell.run("rm -rf Carthage")
       shell.run!("carthage bootstrap")
-      shell.run!("xcodebuild -scheme iOS-Carthage -sdk iphonesimulator")
+      shell.run!("xcodebuild -scheme iOS-Carthage -sdk iphonesimulator test")
     end
   end
 
   desc "Runs tests for cocoapods in ios with App Bundle, Unit Test Bundle, UI Test Bundle"
   task :cocoapods do
-    shell.cd('iOS-Cocoapods') do
+    shell.cd('iOS-Cocoapods', "Testing iOS-Cocoapods") do
+      shell.run("rm -r Podfile.lock")
+      shell.run("rm -rf Pods")
       shell.run!("pod install")
-      shell.run!("xcodebuild -scheme iOS-Cocoapods -workspace iOS-Cocoapods.xcworkspace -sdk iphonesimulator")
+      shell.run!("xcodebuild -scheme iOS-Cocoapods -workspace iOS-Cocoapods.xcworkspace -sdk iphonesimulator test")
     end
   end
 end
