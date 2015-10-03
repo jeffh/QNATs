@@ -217,7 +217,6 @@
 				1F11D38E1BB1266B00015E70 /* Sources */,
 				1F11D38F1BB1266B00015E70 /* Frameworks */,
 				1F11D3901BB1266B00015E70 /* Resources */,
-				1FEE9AA81BBD0F970014DF82 /* Embed Pods Frameworks */,
 				49CF3B2A35E8722A301301AA /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -329,20 +328,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-Cocoapods/Pods-iOS-Cocoapods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		1FEE9AA81BBD0F970014DF82 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-CocoapodsTests/Pods-iOS-CocoapodsTests-frameworks.sh\"\n";
 		};
 		49CF3B2A35E8722A301301AA /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;

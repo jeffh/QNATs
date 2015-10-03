@@ -2,14 +2,14 @@ platform :osx, '10.11'
 use_frameworks!
 
 target 'OSX-Cocoapods' do
-  pod 'Nimble', :head
+  pod 'Nimble', path: '../Vendor/Nimble'
 end
 
 target 'OSX-CocoapodsTests' do
-  pod 'Nimble', :head
+  pod 'Nimble', path: '../Vendor/Nimble'
 end
 
 target 'OSX-CocoapodsUITests' do
-  pod 'Nimble', :head
+  pod 'Nimble', path: '../Vendor/Nimble'
 end
 
