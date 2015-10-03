@@ -148,8 +148,8 @@ task :verbose, [:level] do |t, args|
   shell.print_types += [:io, :debug] if level > 1
 end
 
-desc "Updates Nimble dependency"
-task :update_nimble, [:git_repo, :branch] do |t, args|
+desc "Downloads & replaces Nimble in Vendor/Nimble for use by tests. Can optionally specify a git repo and branch to use."
+task :vendor_nimble, [:git_repo, :branch] do |t, args|
   args.with_defaults(git_repo: 'https://github.com/Quick/Nimble.git', branch: 'master')
   nimble.change(args.git_repo, args.branch)
 end
