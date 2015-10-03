@@ -37,23 +37,28 @@ class Shell
 
   def run(cmd, opt={})
     log :commands, " ~> #{cmd.colorize(:green)}"
-    _, stdout, stderr, wait = Open3::popen3 cmd
-    if opt.fetch(:stream, false)
-      IO.copy_stream(stdout, STDOUT) if log_type? :stdout
-      IO.copy_stream(stderr, STDERR) if log_type? :stderr
+    stream = opt.fetch(:stream, true)
+    if stream && log_type?(:stdout) && log_type?(:stderr)
+      [system(cmd), nil, nil]
     else
+      _, stdout, stderr, wait = Open3::popen3 cmd
       out = stdout.read
       err = stderr.read
       stdout.close
       stderr.close
       log :stdout, out
       log :stderr, err
+
+      if stream # to be consistent
+        out = nil
+        err = nil
+      end
       [wait.value, out, err]
     end
   end
 
   def run!(cmd, opt={})
-    status, stdout, stderr = run(cmd, opt={})
+    status, stdout, stderr = run(cmd, opt)
     fail_if_error(cmd, status, stdout, stderr)
   end
 
@@ -73,7 +78,7 @@ class Shell
 
   private
   def fail_if_error(cmd, status, stdout, stderr)
-    unless status == 0
+    unless status
       log :errors, stdout unless print_types.include? :stdout
       log :errors, stderr unless print_types.include? :stderr
       log :errors, ""
@@ -139,7 +144,7 @@ task :verbose, [:level] do |t, args|
   level = args.level.to_i
 
   shell.print_types = default_print_types
-  shell.print_types += [:commands, :stdout, :stderr, :chdirs, :stream, :io, :debug] if level > 0
+  shell.print_types += [:commands, :stdout, :stderr, :chdirs] if level > 0
   shell.print_types += [:io, :debug] if level > 1
 end
 
@@ -157,8 +162,8 @@ namespace :ios do
       nimble.with_vendored_cartfile do
         shell.run("rm -f Cartfile.resolved")
         shell.run("rm -rf Carthage")
-        shell.run!("carthage bootstrap", stream: true)
-        shell.run!("xcodebuild -scheme iOS-Carthage -sdk iphonesimulator clean test", stream: true)
+        shell.run!("carthage bootstrap")
+        shell.run!("xcodebuild -scheme iOS-Carthage -sdk iphonesimulator clean test")
         shell.ok
       end
     end
@@ -169,8 +174,8 @@ namespace :ios do
     shell.cd('iOS-Cocoapods', "Testing iOS-Cocoapods") do
       shell.run("rm -r Podfile.lock")
       shell.run("rm -rf Pods")
-      shell.run!("pod install", stream: true)
-      shell.run!("xcodebuild -scheme iOS-Cocoapods -workspace iOS-Cocoapods.xcworkspace -sdk iphonesimulator clean test", stream: true)
+      shell.run!("pod install")
+      shell.run!("xcodebuild -scheme iOS-Cocoapods -workspace iOS-Cocoapods.xcworkspace -sdk iphonesimulator clean test")
       shell.ok
     end
   end
