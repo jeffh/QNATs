@@ -33,6 +33,12 @@ rake
 If you prefer, you can change `Vendor/Nimble` to point to a branch of Nimble if
 you want to see how your changes affect these configurations.
 
+`vendor_nimble` rake task supports optional configuration arguments to change the source of Nimble:
+
+```bash
+rake 'vendor_nimble[http://github.com/user/Nimble-Fork.git,my-branch]'
+```
+
 Notes
 -----
 
