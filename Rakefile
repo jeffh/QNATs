@@ -208,4 +208,4 @@ namespace :osx do
   end
 end
 
-task default: %w[update_nimble ios osx]
+task default: %w[ios osx]
