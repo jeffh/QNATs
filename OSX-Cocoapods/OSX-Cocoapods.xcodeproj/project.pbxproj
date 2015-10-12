@@ -11,8 +11,10 @@
 		1F11D3F61BB2473000015E70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11D3F51BB2473000015E70 /* ViewController.swift */; };
 		1F11D3F81BB2473000015E70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F11D3F71BB2473000015E70 /* Assets.xcassets */; };
 		1F11D3FB1BB2473000015E70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F11D3F91BB2473000015E70 /* Main.storyboard */; };
-		1F11D4061BB2473000015E70 /* OSX_CocoapodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11D4051BB2473000015E70 /* OSX_CocoapodsTests.swift */; };
-		1F11D4111BB2473000015E70 /* OSX_CocoapodsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11D4101BB2473000015E70 /* OSX_CocoapodsUITests.swift */; };
+		1F11D4061BB2473000015E70 /* NimbleIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11D4051BB2473000015E70 /* NimbleIntegrationTests.swift */; };
+		1F11D4111BB2473000015E70 /* NimbleIntegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11D4101BB2473000015E70 /* NimbleIntegrationUITests.swift */; };
+		1FE411CD1BCB7C80004B6216 /* QuickIntegrationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE411CC1BCB7C80004B6216 /* QuickIntegrationSpec.swift */; settings = {ASSET_TAGS = (); }; };
+		1FE411CF1BCB7C9C004B6216 /* QuickIntegrationUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE411CE1BCB7C9C004B6216 /* QuickIntegrationUISpec.swift */; settings = {ASSET_TAGS = (); }; };
 		670D8550E4001F845AF5A28E /* Pods_OSX_CocoapodsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BA3A2D85D86B3C2781613B /* Pods_OSX_CocoapodsUITests.framework */; };
 		8C6A42A2718AE5190734200D /* Pods_OSX_CocoapodsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFAD41406E1BB3AB7AFAA4E /* Pods_OSX_CocoapodsTests.framework */; };
 		E522BB922B9519FEFCE5B494 /* Pods_OSX_Cocoapods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81E5C0AE28F492789FC874 /* Pods_OSX_Cocoapods.framework */; };
@@ -44,11 +46,13 @@
 		1F11D3FA1BB2473000015E70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F11D3FC1BB2473000015E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F11D4011BB2473000015E70 /* OSX-CocoapodsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OSX-CocoapodsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F11D4051BB2473000015E70 /* OSX_CocoapodsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSX_CocoapodsTests.swift; sourceTree = "<group>"; };
+		1F11D4051BB2473000015E70 /* NimbleIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleIntegrationTests.swift; sourceTree = "<group>"; };
 		1F11D4071BB2473000015E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F11D40C1BB2473000015E70 /* OSX-CocoapodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OSX-CocoapodsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F11D4101BB2473000015E70 /* OSX_CocoapodsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSX_CocoapodsUITests.swift; sourceTree = "<group>"; };
+		1F11D4101BB2473000015E70 /* NimbleIntegrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleIntegrationUITests.swift; sourceTree = "<group>"; };
 		1F11D4121BB2473000015E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FE411CC1BCB7C80004B6216 /* QuickIntegrationSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickIntegrationSpec.swift; sourceTree = "<group>"; };
+		1FE411CE1BCB7C9C004B6216 /* QuickIntegrationUISpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickIntegrationUISpec.swift; sourceTree = "<group>"; };
 		2AFAD41406E1BB3AB7AFAA4E /* Pods_OSX_CocoapodsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OSX_CocoapodsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69CA125D88987272B6257EAB /* Pods-OSX-CocoapodsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSX-CocoapodsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OSX-CocoapodsUITests/Pods-OSX-CocoapodsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		78D1A60E4E286852B8661F62 /* Pods-OSX-Cocoapods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSX-Cocoapods.release.xcconfig"; path = "Pods/Target Support Files/Pods-OSX-Cocoapods/Pods-OSX-Cocoapods.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,8 +141,9 @@
 		1F11D4041BB2473000015E70 /* OSX-CocoapodsTests */ = {
 			isa = PBXGroup;
 			children = (
-				1F11D4051BB2473000015E70 /* OSX_CocoapodsTests.swift */,
 				1F11D4071BB2473000015E70 /* Info.plist */,
+				1F11D4051BB2473000015E70 /* NimbleIntegrationTests.swift */,
+				1FE411CC1BCB7C80004B6216 /* QuickIntegrationSpec.swift */,
 			);
 			path = "OSX-CocoapodsTests";
 			sourceTree = "<group>";
@@ -146,8 +151,9 @@
 		1F11D40F1BB2473000015E70 /* OSX-CocoapodsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				1F11D4101BB2473000015E70 /* OSX_CocoapodsUITests.swift */,
 				1F11D4121BB2473000015E70 /* Info.plist */,
+				1F11D4101BB2473000015E70 /* NimbleIntegrationUITests.swift */,
+				1FE411CE1BCB7C9C004B6216 /* QuickIntegrationUISpec.swift */,
 			);
 			path = "OSX-CocoapodsUITests";
 			sourceTree = "<group>";
@@ -431,7 +437,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F11D4061BB2473000015E70 /* OSX_CocoapodsTests.swift in Sources */,
+				1F11D4061BB2473000015E70 /* NimbleIntegrationTests.swift in Sources */,
+				1FE411CD1BCB7C80004B6216 /* QuickIntegrationSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +446,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F11D4111BB2473000015E70 /* OSX_CocoapodsUITests.swift in Sources */,
+				1F11D4111BB2473000015E70 /* NimbleIntegrationUITests.swift in Sources */,
+				1FE411CF1BCB7C9C004B6216 /* QuickIntegrationUISpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

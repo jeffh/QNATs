@@ -14,8 +14,10 @@
 		1F11D37C1BB1266B00015E70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F11D37A1BB1266B00015E70 /* Main.storyboard */; };
 		1F11D37E1BB1266B00015E70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F11D37D1BB1266B00015E70 /* Assets.xcassets */; };
 		1F11D3811BB1266B00015E70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F11D37F1BB1266B00015E70 /* LaunchScreen.storyboard */; };
-		1F11D38C1BB1266B00015E70 /* iOS_CocoapodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11D38B1BB1266B00015E70 /* iOS_CocoapodsTests.swift */; };
-		1F11D3971BB1266B00015E70 /* iOS_CocoapodsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11D3961BB1266B00015E70 /* iOS_CocoapodsUITests.swift */; };
+		1F11D38C1BB1266B00015E70 /* NimbleIntegrationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11D38B1BB1266B00015E70 /* NimbleIntegrationTest.swift */; };
+		1F11D3971BB1266B00015E70 /* NimbleIntegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11D3961BB1266B00015E70 /* NimbleIntegrationUITests.swift */; };
+		1FE411C91BCB7B11004B6216 /* QuickIntegrationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE411C81BCB7B11004B6216 /* QuickIntegrationSpec.swift */; settings = {ASSET_TAGS = (); }; };
+		1FE411CB1BCB7B5F004B6216 /* QuickIntegrationUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE411CA1BCB7B5F004B6216 /* QuickIntegrationUISpec.swift */; settings = {ASSET_TAGS = (); }; };
 		6E2EFEA0842A5931465DFFA5 /* Pods_iOS_CocoapodsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7724DF45C8C4BF4368E5F0 /* Pods_iOS_CocoapodsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,11 +49,13 @@
 		1F11D3801BB1266B00015E70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F11D3821BB1266B00015E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F11D3871BB1266B00015E70 /* iOS-CocoapodsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-CocoapodsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F11D38B1BB1266B00015E70 /* iOS_CocoapodsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_CocoapodsTests.swift; sourceTree = "<group>"; };
+		1F11D38B1BB1266B00015E70 /* NimbleIntegrationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleIntegrationTest.swift; sourceTree = "<group>"; };
 		1F11D38D1BB1266B00015E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F11D3921BB1266B00015E70 /* iOS-CocoapodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-CocoapodsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F11D3961BB1266B00015E70 /* iOS_CocoapodsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_CocoapodsUITests.swift; sourceTree = "<group>"; };
+		1F11D3961BB1266B00015E70 /* NimbleIntegrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleIntegrationUITests.swift; sourceTree = "<group>"; };
 		1F11D3981BB1266B00015E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FE411C81BCB7B11004B6216 /* QuickIntegrationSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickIntegrationSpec.swift; sourceTree = "<group>"; };
+		1FE411CA1BCB7B5F004B6216 /* QuickIntegrationUISpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickIntegrationUISpec.swift; sourceTree = "<group>"; };
 		3CA7F87398AFE473A4567667 /* Pods_iOS_Cocoapods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Cocoapods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D848A44B5D6A2AF1F8CDD49 /* Pods-iOS-Cocoapods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Cocoapods.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Cocoapods/Pods-iOS-Cocoapods.release.xcconfig"; sourceTree = "<group>"; };
 		8F7724DF45C8C4BF4368E5F0 /* Pods_iOS_CocoapodsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_CocoapodsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,7 +131,8 @@
 		1F11D38A1BB1266B00015E70 /* iOS-CocoapodsTests */ = {
 			isa = PBXGroup;
 			children = (
-				1F11D38B1BB1266B00015E70 /* iOS_CocoapodsTests.swift */,
+				1F11D38B1BB1266B00015E70 /* NimbleIntegrationTest.swift */,
+				1FE411C81BCB7B11004B6216 /* QuickIntegrationSpec.swift */,
 				1F11D38D1BB1266B00015E70 /* Info.plist */,
 			);
 			path = "iOS-CocoapodsTests";
@@ -136,7 +141,8 @@
 		1F11D3951BB1266B00015E70 /* iOS-CocoapodsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				1F11D3961BB1266B00015E70 /* iOS_CocoapodsUITests.swift */,
+				1F11D3961BB1266B00015E70 /* NimbleIntegrationUITests.swift */,
+				1FE411CA1BCB7B5F004B6216 /* QuickIntegrationUISpec.swift */,
 				1F11D3981BB1266B00015E70 /* Info.plist */,
 			);
 			path = "iOS-CocoapodsUITests";
@@ -435,7 +441,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F11D38C1BB1266B00015E70 /* iOS_CocoapodsTests.swift in Sources */,
+				1F11D38C1BB1266B00015E70 /* NimbleIntegrationTest.swift in Sources */,
+				1FE411C91BCB7B11004B6216 /* QuickIntegrationSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +450,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F11D3971BB1266B00015E70 /* iOS_CocoapodsUITests.swift in Sources */,
+				1FE411CB1BCB7B5F004B6216 /* QuickIntegrationUISpec.swift in Sources */,
+				1F11D3971BB1266B00015E70 /* NimbleIntegrationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

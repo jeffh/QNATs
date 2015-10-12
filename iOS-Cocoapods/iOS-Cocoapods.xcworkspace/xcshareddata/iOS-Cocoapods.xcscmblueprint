@@ -5,12 +5,14 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "95438028B10BBB846574013D29F154A00556A9D1" : 0,
-    "54FA4C0FF1EB1AF204CC60500363DB0A41041F99" : 0
+    "54FA4C0FF1EB1AF204CC60500363DB0A41041F99" : 0,
+    "D0725CAC6FF2D66F2C83C2C48DC12106D42DAA64" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CEEADFAA-8742-4298-BC6D-58CA5ADC197E",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "95438028B10BBB846574013D29F154A00556A9D1" : "Nimble\/",
-    "54FA4C0FF1EB1AF204CC60500363DB0A41041F99" : "NimbleProjectTests\/"
+    "54FA4C0FF1EB1AF204CC60500363DB0A41041F99" : "NimbleProjectTests\/",
+    "D0725CAC6FF2D66F2C83C2C48DC12106D42DAA64" : "QATs\/Vendor\/Quick\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "iOS-Cocoapods",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -25,6 +27,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Quick\/Nimble",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "95438028B10BBB846574013D29F154A00556A9D1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Quick\/Quick.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D0725CAC6FF2D66F2C83C2C48DC12106D42DAA64"
     }
   ]
 }
