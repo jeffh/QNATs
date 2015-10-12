@@ -107,7 +107,10 @@ class Dependency
     @shell.cd(@path, "Updating #{@name.colorize(:green)} to #{@git_repo.colorize(:green)} #{@branch.colorize(:blue)}") do
       @shell.run("rm -rf #{@name.inspect}")
       @shell.run!("git clone #{@git_repo.inspect} #{@name.inspect}")
-      @shell.run!("git checkout #{@branch.inspect}")
+      @shell.cd(@name) do
+        @shell.run!("git fetch")
+        @shell.run!("git checkout #{@branch.inspect}")
+      end
     end
   end
 
@@ -142,6 +145,13 @@ shell = Shell.new(print_types: default_print_types)
 nimble = Dependency.new(shell, 'Nimble', './Vendor', 'https://github.com/Quick/Nimble.git', 'master')
 quick = Dependency.new(shell, 'Quick', './Vendor', 'https://github.com/Quick/Quick.git', 'master')
 
+task :print_versions do
+  shell.group("Xcode Information".colorize(:green)) do
+    system("xcodebuild -showsdks")
+    system("xcodebuild -version")
+  end
+end
+
 desc "Makes future rake tasks print verbosely (ranges from 1-2)"
 task :verbose, [:level] do |t, args|
   args.with_defaults(level: '1')
@@ -152,16 +162,16 @@ task :verbose, [:level] do |t, args|
   shell.print_types += [:io, :debug] if level > 1
 end
 
-task vendor: %w[vendor:nimble, vendor:quick]
+task vendor: %w[vendor:nimble vendor:quick]
 namespace :vendor do
   desc "Downloads & replaces Nimble in Vendor/Nimble for use by tests. Can optionally specify a git repo and branch to use."
-  task :nimble, [:git_repo, :branch] do |t, args|
+  task :nimble, [:print_versions, :git_repo, :branch] do |t, args|
     args.with_defaults(git_repo: 'https://github.com/Quick/Nimble.git', branch: 'master')
     nimble.change(args.git_repo, args.branch)
   end
 
   desc "Downloads & replaces Quick in Vendor/Quick for use by tests. Can optionally specify a git repo and branch to use."
-  task :quick, [:git_repo, :branch] do |t, args|
+  task :quick, [:print_versions, :git_repo, :branch] do |t, args|
     args.with_defaults(git_repo: 'https://github.com/Quick/Quick.git', branch: 'master')
     quick.change(args.git_repo, args.branch)
   end
@@ -170,7 +180,7 @@ end
 task ios: %w[ios:cocoapods ios:carthage]
 namespace :ios do
   desc "Runs tests for carthage in ios with App Bundle, Unit Test Bundle, UI Test Bundle"
-  task :carthage do
+  task :carthage, [:print_verisons] do
     shell.cd('iOS-Carthage', "Testing iOS-Carthage") do
       with_vendored_cartfile(shell, [nimble, quick]) do
         shell.run("rm -f Cartfile.resolved")
@@ -183,7 +193,7 @@ namespace :ios do
   end
 
   desc "Runs tests for cocoapods in ios with App Bundle, Unit Test Bundle, UI Test Bundle"
-  task :cocoapods do
+  task :cocoapods, [:print_verisons] do
     shell.cd('iOS-Cocoapods', "Testing iOS-Cocoapods") do
       shell.run("rm -r Podfile.lock")
       shell.run("rm -rf Pods")
@@ -197,7 +207,7 @@ end
 task osx: %w[osx:carthage osx:cocoapods]
 namespace :osx do
   desc "Runs tests for carthage in osx with App Bundle, Unit Test Bundle, UI Test Bundle"
-  task :carthage do
+  task :carthage, [:print_verisons] do
     shell.cd('OSX-Carthage', "Testing OSX-Carthage") do
       with_vendored_cartfile(shell, [nimble, quick]) do
         shell.run("rm -f Cartfile.resolved")
@@ -210,7 +220,7 @@ namespace :osx do
   end
 
   desc "Runs tests for cocoapods in osx with App BUndle, Unit Test Bundle, UI Test Bundle"
-  task :cocoapods do
+  task :cocoapods, [:print_verisons] do
     shell.cd('OSX-Cocoapods', "Testing OSX-Cocoapods") do
       shell.run("rm -r Podfile.lock")
       shell.run("rm -rf Pods")
@@ -218,6 +228,13 @@ namespace :osx do
       shell.run!("xcodebuild -scheme OSX-Cocoapods -workspace OSX-Cocoapods.xcworkspace clean test", stream: true)
       shell.ok
     end
+  end
+end
+
+desc "Removes all Xcode derrived data"
+task :clean do
+  shell.group('Removing Derived Data...') do
+    shell.run("rm -rf ~/Library/Developer/Xcode/DerivedData")
   end
 end
 
