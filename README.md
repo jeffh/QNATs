@@ -16,6 +16,16 @@ Current testing configurations:
 - OS X, UI Test Bundle
 - OS X, Without XCTest (in app; Nimble Only)
 
+Setup
+-----
+
+Clone this repository. Install `colorize` in one of two ways:
+
+```
+bundle install # if you have bundler
+gem instal 'colorize' # or directly install the only dependency
+```
+
 Running
 -------
 
