@@ -114,29 +114,33 @@ class Dependency
   def vendor_path
     File.join(@path, @name)
   end
+end
 
-  def with_vendored_cartfile
-    if File.exists? vendor_path
-      @shell.group("#{'Using'.colorize(:green)} vendored #{@name}: #{vendor_path}", :debug) do
-        backup = @shell.read('Cartfile')
-        @shell.write('Cartfile', "git \"file://#{vendor_path}\" \"#{@branch}\"")
-        begin
-          yield
-        ensure
-          @shell.write('Cartfile', backup)
-        end
-      end
+def with_vendored_cartfile(shell, dependencies)
+  contents = []
+  dependencies.each do |dependency|
+    if File.exists? dependency.vendor_path
+      shell.log(:debug, "Using".colorize(:green) + " vendored #{dependency.name}: #{dependency.vendor_path}")
+      contents << "git \"file://#{dependency.vendor_path}\" \"#{dependency.branch}\""
     else
-      @shell.group("#{'NOT'.colorize(:red)} using vendored #{@name}", :debug) do
-        yield
-      end
+      shell.log(:debug, "NOT".colorize(:red) + " using vendored #{dependency.name}: #{dependency.vendor_path}")
+      contents << "github \"#{dependency.git_repo}\" \"#{dependency.branch}\""
     end
+  end
+
+  backup = shell.read('Cartfile')
+  shell.write('Cartfile', contents.join("\n"))
+  begin
+    yield
+  ensure
+    shell.write('Cartfile', backup)
   end
 end
 
 default_print_types = [:group, :errors, :info]
 shell = Shell.new(print_types: default_print_types)
 nimble = Dependency.new(shell, 'Nimble', './Vendor', 'https://github.com/Quick/Nimble.git', 'master')
+quick = Dependency.new(shell, 'Quick', './Vendor', 'https://github.com/Quick/Quick.git', 'master')
 
 desc "Makes future rake tasks print verbosely (ranges from 1-2)"
 task :verbose, [:level] do |t, args|
@@ -148,10 +152,19 @@ task :verbose, [:level] do |t, args|
   shell.print_types += [:io, :debug] if level > 1
 end
 
-desc "Downloads & replaces Nimble in Vendor/Nimble for use by tests. Can optionally specify a git repo and branch to use."
-task :vendor_nimble, [:git_repo, :branch] do |t, args|
-  args.with_defaults(git_repo: 'https://github.com/Quick/Nimble.git', branch: 'master')
-  nimble.change(args.git_repo, args.branch)
+task vendor: %w[vendor:nimble, vendor:quick]
+namespace :vendor do
+  desc "Downloads & replaces Nimble in Vendor/Nimble for use by tests. Can optionally specify a git repo and branch to use."
+  task :nimble, [:git_repo, :branch] do |t, args|
+    args.with_defaults(git_repo: 'https://github.com/Quick/Nimble.git', branch: 'master')
+    nimble.change(args.git_repo, args.branch)
+  end
+
+  desc "Downloads & replaces Quick in Vendor/Quick for use by tests. Can optionally specify a git repo and branch to use."
+  task :quick, [:git_repo, :branch] do |t, args|
+    args.with_defaults(git_repo: 'https://github.com/Quick/Quick.git', branch: 'master')
+    quick.change(args.git_repo, args.branch)
+  end
 end
 
 task ios: %w[ios:cocoapods ios:carthage]
@@ -159,7 +172,7 @@ namespace :ios do
   desc "Runs tests for carthage in ios with App Bundle, Unit Test Bundle, UI Test Bundle"
   task :carthage do
     shell.cd('iOS-Carthage', "Testing iOS-Carthage") do
-      nimble.with_vendored_cartfile do
+      with_vendored_cartfile(shell, [nimble, quick]) do
         shell.run("rm -f Cartfile.resolved")
         shell.run("rm -rf Carthage")
         shell.run!("carthage bootstrap")
@@ -186,7 +199,7 @@ namespace :osx do
   desc "Runs tests for carthage in osx with App Bundle, Unit Test Bundle, UI Test Bundle"
   task :carthage do
     shell.cd('OSX-Carthage', "Testing OSX-Carthage") do
-      nimble.with_vendored_cartfile do
+      with_vendored_cartfile(shell, [nimble, quick]) do
         shell.run("rm -f Cartfile.resolved")
         shell.run("rm -rf Carthage")
         shell.run!("carthage bootstrap", stream: true)

@@ -13,9 +13,9 @@
 		1F11D3FB1BB2473000015E70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F11D3F91BB2473000015E70 /* Main.storyboard */; };
 		1F11D4061BB2473000015E70 /* OSX_CocoapodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11D4051BB2473000015E70 /* OSX_CocoapodsTests.swift */; };
 		1F11D4111BB2473000015E70 /* OSX_CocoapodsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11D4101BB2473000015E70 /* OSX_CocoapodsUITests.swift */; };
-		670D8550E4001F845AF5A28E /* Pods_OSX_CocoapodsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BA3A2D85D86B3C2781613B /* Pods_OSX_CocoapodsUITests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		8C6A42A2718AE5190734200D /* Pods_OSX_CocoapodsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFAD41406E1BB3AB7AFAA4E /* Pods_OSX_CocoapodsTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		E522BB922B9519FEFCE5B494 /* Pods_OSX_Cocoapods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81E5C0AE28F492789FC874 /* Pods_OSX_Cocoapods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		670D8550E4001F845AF5A28E /* Pods_OSX_CocoapodsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BA3A2D85D86B3C2781613B /* Pods_OSX_CocoapodsUITests.framework */; };
+		8C6A42A2718AE5190734200D /* Pods_OSX_CocoapodsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFAD41406E1BB3AB7AFAA4E /* Pods_OSX_CocoapodsTests.framework */; };
+		E522BB922B9519FEFCE5B494 /* Pods_OSX_Cocoapods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81E5C0AE28F492789FC874 /* Pods_OSX_Cocoapods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

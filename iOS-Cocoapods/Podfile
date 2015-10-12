@@ -1,14 +1,17 @@
 use_frameworks!
 
 target 'iOS-Cocoapods' do
+  # pod 'Quick', path: '../Vendor/Quick' # Quick doesn't support running without XCTest
   pod 'Nimble', path: '../Vendor/Nimble'
 end
 
 target 'iOS-CocoapodsTests' do
+  pod 'Quick', path: '../Vendor/Quick'
   pod 'Nimble', path: '../Vendor/Nimble'
 end
 
 target 'iOS-CocoapodsUITests' do
+  pod 'Quick', path: '../Vendor/Quick'
   pod 'Nimble', path: '../Vendor/Nimble'
 end
 
