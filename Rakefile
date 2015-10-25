@@ -76,6 +76,10 @@ class Shell
     contents
   end
 
+  def xcodebuild(cmd)
+    run!("xcodebuild #{cmd}", stream: true)
+  end
+
   private
   def fail_if_error(cmd, status, stdout, stderr)
     unless status
@@ -140,6 +144,22 @@ def with_vendored_cartfile(shell, dependencies)
   end
 end
 
+def with_carthage(shell, dependencies)
+  with_vendored_cartfile(shell, dependencies) do
+    shell.run("rm -f Cartfile.resolved")
+    shell.run("rm -rf Carthage")
+    shell.run!("carthage bootstrap", stream: true)
+    yield
+  end
+end
+
+def with_cocoapods(shell)
+  shell.run("rm -r Podfile.lock")
+  shell.run("rm -rf Pods")
+  shell.run!("pod install")
+  yield
+end
+
 default_print_types = [:group, :errors, :info]
 shell = Shell.new(print_types: default_print_types)
 nimble = Dependency.new(shell, 'Nimble', './Vendor', 'https://github.com/Quick/Nimble.git', 'master')
@@ -179,57 +199,107 @@ end
 
 task ios: %w[ios:cocoapods ios:carthage]
 namespace :ios do
-  desc "Runs tests for carthage in ios with App Bundle, Unit Test Bundle, UI Test Bundle"
-  task :carthage => [:print_versions] do
-    shell.cd('iOS-Carthage', "Testing iOS-Carthage") do
-      with_vendored_cartfile(shell, [nimble, quick]) do
-        shell.run("rm -f Cartfile.resolved")
-        shell.run("rm -rf Carthage")
-        shell.run!("carthage bootstrap")
-        shell.run!("xcodebuild -scheme iOS-Carthage -sdk iphonesimulator clean test")
-        shell.ok
+  task carthage: %w[ios:carthage:quick ios:carthage:nimble]
+  namespace :carthage do
+    desc "Runs tests for carthage in ios with App Bundle, Unit Test Bundle, UI Test Bundle for Quick"
+    task :quick => [:print_versions] do
+      shell.cd('iOS-Carthage', "Testing iOS-Carthage (Quick)") do
+        with_carthage(shell, [nimble, quick]) do
+          shell.xcodebuild("-scheme iOS-Carthage-Quick -sdk iphonesimulator clean test")
+          shell.ok
+        end
+      end
+    end
+
+    desc "Runs tests for carthage in ios with App Bundle, Unit Test Bundle, UI Test Bundle for Nimble"
+    task :nimble => [:print_versions] do
+      shell.cd('iOS-Carthage', "Testing iOS-Carthage (Nimble)") do
+        with_carthage(shell, [nimble, quick]) do
+          shell.xcodebuild("-scheme iOS-Carthage-Nimble -sdk iphonesimulator clean test")
+          shell.ok
+        end
       end
     end
   end
 
-  desc "Runs tests for cocoapods in ios with App Bundle, Unit Test Bundle, UI Test Bundle"
-  task :cocoapods => [:print_versions] do
-    shell.cd('iOS-Cocoapods', "Testing iOS-Cocoapods") do
-      shell.run("rm -r Podfile.lock")
-      shell.run("rm -rf Pods")
-      shell.run!("pod install")
-      shell.run!("xcodebuild -scheme iOS-Cocoapods -workspace iOS-Cocoapods.xcworkspace -sdk iphonesimulator clean test")
-      shell.ok
+  task cocoapods: %w[ios:cocoapods:quick ios:cocoapods:nimble]
+  namespace :cocoapods do
+    desc "Runs tests for cocoapods in ios with App Bundle, Unit Test Bundle, UI Test Bundle for Quick"
+    task :quick => [:print_versions] do
+      shell.cd('iOS-Cocoapods', "Testing iOS-Cocoapods (Quick)") do
+        with_cocoapods(shell) do
+          shell.xcodebuild("-scheme iOS-Cocoapods-Quick -workspace iOS-Cocoapods.xcworkspace -sdk iphonesimulator clean test")
+          shell.ok
+        end
+      end
+    end
+
+    desc "Runs tests for cocoapods in ios with App Bundle, Unit Test Bundle, UI Test Bundle for Nimble"
+    task :nimble => [:print_versions] do
+      shell.cd('iOS-Cocoapods', "Testing iOS-Cocoapods (Nimble)") do
+        with_cocoapods(shell) do
+          shell.xcodebuild("-scheme iOS-Cocoapods-Nimble -workspace iOS-Cocoapods.xcworkspace -sdk iphonesimulator clean test")
+          shell.ok
+        end
+      end
     end
   end
 end
 
 task osx: %w[osx:carthage osx:cocoapods]
 namespace :osx do
-  desc "Runs tests for carthage in osx with App Bundle, Unit Test Bundle, UI Test Bundle"
-  task :carthage => [:print_versions] do
-    shell.cd('OSX-Carthage', "Testing OSX-Carthage") do
-      with_vendored_cartfile(shell, [nimble, quick]) do
-        shell.run("rm -f Cartfile.resolved")
-        shell.run("rm -rf Carthage")
-        shell.run!("carthage bootstrap", stream: true)
-        shell.run!("xcodebuild -scheme OSX-Carthage clean test", stream: true)
-        shell.ok
+  task carthage: %w[osx:carthage:quick osx:carthage:nimble]
+  namespace :carthage do
+    desc "Runs tests for carthage in osx with App Bundle, Unit Test Bundle, UI Test Bundle for Quick"
+    task :quick => [:print_versions] do
+      shell.cd('OSX-Carthage', "Testing OSX-Carthage (Quick)") do
+        with_carthage(shell, [nimble, quick]) do
+          shell.xcodebuild("-scheme OSX-Carthage-Quick clean test")
+          shell.ok
+        end
+      end
+    end
+
+    desc "Runs tests for carthage in osx with App Bundle, Unit Test Bundle, UI Test Bundle for Nimble"
+    task :nimble => [:print_versions] do
+      shell.cd('OSX-Carthage', "Testing OSX-Carthage (Nimble)") do
+        with_carthage(shell, [nimble, quick]) do
+          shell.xcodebuild("-scheme OSX-Carthage-Nimble clean test")
+          shell.ok
+        end
       end
     end
   end
 
-  desc "Runs tests for cocoapods in osx with App BUndle, Unit Test Bundle, UI Test Bundle"
-  task :cocoapods => [:print_versions] do
-    shell.cd('OSX-Cocoapods', "Testing OSX-Cocoapods") do
-      shell.run("rm -r Podfile.lock")
-      shell.run("rm -rf Pods")
-      shell.run!("pod install", stream: true)
-      shell.run!("xcodebuild -scheme OSX-Cocoapods -workspace OSX-Cocoapods.xcworkspace clean test", stream: true)
-      shell.ok
+  task cocoapods: %w[osx:cocoapods:quick osx:cocoapods:nimble]
+  namespace :cocoapods do
+    desc "Runs tests for cocoapods in osx with App Bundle, Unit Test Bundle, UI Test Bundle for Quick"
+    task :quick => [:print_versions] do
+      shell.cd('OSX-Cocoapods', "Testing OSX-Cocoapods (Quick)") do
+        with_cocoapods(shell) do
+          shell.xcodebuild("-scheme OSX-Cocoapods-Quick -workspace OSX-Cocoapods.xcworkspace clean test")
+          shell.ok
+        end
+      end
+    end
+
+    desc "Runs tests for cocoapods in osx with App Bundle, Unit Test Bundle, UI Test Bundle for Nimble"
+    task :nimble => [:print_versions] do
+      shell.cd('OSX-Cocoapods', "Testing OSX-Cocoapods (Nimble)") do
+        with_cocoapods(shell) do
+          shell.xcodebuild("-scheme OSX-Cocoapods-Nimble -workspace OSX-Cocoapods.xcworkspace clean test")
+          shell.ok
+        end
+      end
     end
   end
 end
+
+desc "Runs all Quick related tests"
+task quick: %w[ios:carthage:quick ios:cocoapods:quick osx:carthage:quick osx:cocoapods:quick]
+
+desc "Runs all Nimble related tests"
+task nimble: %w[ios:carthage:nimble ios:cocoapods:nimble osx:carthage:nimble osx:cocoapods:nimble]
 
 desc "Removes all Xcode derrived data"
 task :clean do

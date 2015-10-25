@@ -5,13 +5,21 @@ target 'iOS-Cocoapods' do
   pod 'Nimble', path: '../Vendor/Nimble'
 end
 
-target 'iOS-CocoapodsTests' do
+target 'iOS-Cocoapods-QuickTests' do
   pod 'Quick', path: '../Vendor/Quick'
   pod 'Nimble', path: '../Vendor/Nimble'
 end
 
-target 'iOS-CocoapodsUITests' do
+target 'iOS-Cocoapods-QuickUITests' do
   pod 'Quick', path: '../Vendor/Quick'
   pod 'Nimble', path: '../Vendor/Nimble'
+end
+
+target 'iOS-Cocoapods-NimbleTests' do
+    pod 'Nimble', path: '../Vendor/Nimble'
+end
+
+target 'iOS-Cocoapods-NimbleUITests' do
+    pod 'Nimble', path: '../Vendor/Nimble'
 end
 

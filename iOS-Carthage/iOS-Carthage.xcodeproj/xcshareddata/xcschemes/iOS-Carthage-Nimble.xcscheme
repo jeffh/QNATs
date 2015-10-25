@@ -50,9 +50,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1F11D3C01BB12E7B00015E70"
-               BuildableName = "iOS-CarthageTests.xctest"
-               BlueprintName = "iOS-CarthageTests"
+               BlueprintIdentifier = "1FA48A871BDC8C1B00298380"
+               BuildableName = "iOS-Carthage-NimbleTests.xctest"
+               BlueprintName = "iOS-Carthage-NimbleTests"
                ReferencedContainer = "container:iOS-Carthage.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -60,9 +60,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1F11D3CB1BB12E7B00015E70"
-               BuildableName = "iOS-CarthageUITests.xctest"
-               BlueprintName = "iOS-CarthageUITests"
+               BlueprintIdentifier = "1FA48A751BDC8C0F00298380"
+               BuildableName = "iOS-Carthage-NimbleUITests.xctest"
+               BlueprintName = "iOS-Carthage-NimbleUITests"
                ReferencedContainer = "container:iOS-Carthage.xcodeproj">
             </BuildableReference>
          </TestableReference>

@@ -14,10 +14,10 @@
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "1F11D3721BB1266B00015E70"
-                     BuildableName = "iOS-Cocoapods.app"
-                     BlueprintName = "iOS-Cocoapods"
-                     ReferencedContainer = "container:iOS-Cocoapods.xcodeproj">
+                     BlueprintIdentifier = "1FEE9A661BBBD1410014DF82"
+                     BuildableName = "OSX-Carthage.app"
+                     BlueprintName = "OSX-Carthage"
+                     ReferencedContainer = "container:OSX-Carthage.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
             </ActionContent>
@@ -32,10 +32,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1F11D3721BB1266B00015E70"
-               BuildableName = "iOS-Cocoapods.app"
-               BlueprintName = "iOS-Cocoapods"
-               ReferencedContainer = "container:iOS-Cocoapods.xcodeproj">
+               BlueprintIdentifier = "1FEE9A661BBBD1410014DF82"
+               BuildableName = "OSX-Carthage.app"
+               BlueprintName = "OSX-Carthage"
+               ReferencedContainer = "container:OSX-Carthage.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -50,30 +50,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1F11D3861BB1266B00015E70"
-               BuildableName = "iOS-CocoapodsTests.xctest"
-               BlueprintName = "iOS-CocoapodsTests"
-               ReferencedContainer = "container:iOS-Cocoapods.xcodeproj">
+               BlueprintIdentifier = "1FA48ACD1BDC910E00298380"
+               BuildableName = "OSX-Carthage-NimbleTests.xctest"
+               BlueprintName = "OSX-Carthage-NimbleTests"
+               ReferencedContainer = "container:OSX-Carthage.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1F11D3911BB1266B00015E70"
-               BuildableName = "iOS-CocoapodsUITests.xctest"
-               BlueprintName = "iOS-CocoapodsUITests"
-               ReferencedContainer = "container:iOS-Cocoapods.xcodeproj">
+               BlueprintIdentifier = "1FA48ABC1BDC910600298380"
+               BuildableName = "OSX-Carthage-NimbleUITests.xctest"
+               BlueprintName = "OSX-Carthage-NimbleUITests"
+               ReferencedContainer = "container:OSX-Carthage.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1F11D3721BB1266B00015E70"
-            BuildableName = "iOS-Cocoapods.app"
-            BlueprintName = "iOS-Cocoapods"
-            ReferencedContainer = "container:iOS-Cocoapods.xcodeproj">
+            BlueprintIdentifier = "1FEE9A661BBBD1410014DF82"
+            BuildableName = "OSX-Carthage.app"
+            BlueprintName = "OSX-Carthage"
+            ReferencedContainer = "container:OSX-Carthage.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1F11D3721BB1266B00015E70"
-            BuildableName = "iOS-Cocoapods.app"
-            BlueprintName = "iOS-Cocoapods"
-            ReferencedContainer = "container:iOS-Cocoapods.xcodeproj">
+            BlueprintIdentifier = "1FEE9A661BBBD1410014DF82"
+            BuildableName = "OSX-Carthage.app"
+            BlueprintName = "OSX-Carthage"
+            ReferencedContainer = "container:OSX-Carthage.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -112,10 +112,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1F11D3721BB1266B00015E70"
-            BuildableName = "iOS-Cocoapods.app"
-            BlueprintName = "iOS-Cocoapods"
-            ReferencedContainer = "container:iOS-Cocoapods.xcodeproj">
+            BlueprintIdentifier = "1FEE9A661BBBD1410014DF82"
+            BuildableName = "OSX-Carthage.app"
+            BlueprintName = "OSX-Carthage"
+            ReferencedContainer = "container:OSX-Carthage.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

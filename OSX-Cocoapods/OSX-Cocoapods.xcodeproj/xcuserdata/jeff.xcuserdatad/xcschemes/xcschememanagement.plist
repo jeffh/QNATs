@@ -4,7 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>OSX-Cocoapods.xcscheme_^#shared#^_</key>
+		<key>OSX-Cocoapods-Nimble.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>OSX-Cocoapods-Quick.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -23,6 +28,16 @@
 			<true/>
 		</dict>
 		<key>1F11D40B1BB2473000015E70</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1FA48AE21BDC923700298380</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1FA48AF21BDC923800298380</key>
 		<dict>
 			<key>primary</key>
 			<true/>
