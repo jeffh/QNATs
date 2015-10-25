@@ -165,13 +165,13 @@ end
 task vendor: %w[vendor:nimble vendor:quick]
 namespace :vendor do
   desc "Downloads & replaces Nimble in Vendor/Nimble for use by tests. Can optionally specify a git repo and branch to use."
-  task :nimble, [:print_versions, :git_repo, :branch] do |t, args|
+  task :nimble, [:git_repo, :branch] => [:print_versions] do |t, args|
     args.with_defaults(git_repo: 'https://github.com/Quick/Nimble.git', branch: 'master')
     nimble.change(args.git_repo, args.branch)
   end
 
   desc "Downloads & replaces Quick in Vendor/Quick for use by tests. Can optionally specify a git repo and branch to use."
-  task :quick, [:print_versions, :git_repo, :branch] do |t, args|
+  task :quick, [:git_repo, :branch] => [:print_versions] do |t, args|
     args.with_defaults(git_repo: 'https://github.com/Quick/Quick.git', branch: 'master')
     quick.change(args.git_repo, args.branch)
   end
@@ -180,7 +180,7 @@ end
 task ios: %w[ios:cocoapods ios:carthage]
 namespace :ios do
   desc "Runs tests for carthage in ios with App Bundle, Unit Test Bundle, UI Test Bundle"
-  task :carthage, [:print_verisons] do
+  task :carthage => [:print_versions] do
     shell.cd('iOS-Carthage', "Testing iOS-Carthage") do
       with_vendored_cartfile(shell, [nimble, quick]) do
         shell.run("rm -f Cartfile.resolved")
@@ -193,7 +193,7 @@ namespace :ios do
   end
 
   desc "Runs tests for cocoapods in ios with App Bundle, Unit Test Bundle, UI Test Bundle"
-  task :cocoapods, [:print_verisons] do
+  task :cocoapods => [:print_versions] do
     shell.cd('iOS-Cocoapods', "Testing iOS-Cocoapods") do
       shell.run("rm -r Podfile.lock")
       shell.run("rm -rf Pods")
@@ -207,7 +207,7 @@ end
 task osx: %w[osx:carthage osx:cocoapods]
 namespace :osx do
   desc "Runs tests for carthage in osx with App Bundle, Unit Test Bundle, UI Test Bundle"
-  task :carthage, [:print_verisons] do
+  task :carthage => [:print_versions] do
     shell.cd('OSX-Carthage', "Testing OSX-Carthage") do
       with_vendored_cartfile(shell, [nimble, quick]) do
         shell.run("rm -f Cartfile.resolved")
@@ -220,7 +220,7 @@ namespace :osx do
   end
 
   desc "Runs tests for cocoapods in osx with App BUndle, Unit Test Bundle, UI Test Bundle"
-  task :cocoapods, [:print_verisons] do
+  task :cocoapods => [:print_versions] do
     shell.cd('OSX-Cocoapods', "Testing OSX-Cocoapods") do
       shell.run("rm -r Podfile.lock")
       shell.run("rm -rf Pods")
