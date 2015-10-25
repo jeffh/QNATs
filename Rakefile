@@ -144,11 +144,11 @@ def with_vendored_cartfile(shell, dependencies)
   end
 end
 
-def with_carthage(shell, dependencies)
+def with_carthage(shell, platform, dependencies)
   with_vendored_cartfile(shell, dependencies) do
     shell.run("rm -f Cartfile.resolved")
     shell.run("rm -rf Carthage")
-    shell.run!("carthage bootstrap", stream: true)
+    shell.run!("carthage bootstrap --platform #{platform}", stream: true)
     yield
   end
 end
@@ -204,7 +204,7 @@ namespace :ios do
     desc "Runs tests for carthage in ios with App Bundle, Unit Test Bundle, UI Test Bundle for Quick"
     task :quick => [:print_versions] do
       shell.cd('iOS-Carthage', "Testing iOS-Carthage (Quick)") do
-        with_carthage(shell, [nimble, quick]) do
+        with_carthage(shell, :ios, [nimble, quick]) do
           shell.xcodebuild("-scheme iOS-Carthage-Quick -sdk iphonesimulator clean test")
           shell.ok
         end
@@ -214,7 +214,7 @@ namespace :ios do
     desc "Runs tests for carthage in ios with App Bundle, Unit Test Bundle, UI Test Bundle for Nimble"
     task :nimble => [:print_versions] do
       shell.cd('iOS-Carthage', "Testing iOS-Carthage (Nimble)") do
-        with_carthage(shell, [nimble, quick]) do
+        with_carthage(shell, :ios, [nimble, quick]) do
           shell.xcodebuild("-scheme iOS-Carthage-Nimble -sdk iphonesimulator clean test")
           shell.ok
         end
@@ -253,7 +253,7 @@ namespace :osx do
     desc "Runs tests for carthage in osx with App Bundle, Unit Test Bundle, UI Test Bundle for Quick"
     task :quick => [:print_versions] do
       shell.cd('OSX-Carthage', "Testing OSX-Carthage (Quick)") do
-        with_carthage(shell, [nimble, quick]) do
+        with_carthage(shell, :osx, [nimble, quick]) do
           shell.xcodebuild("-scheme OSX-Carthage-Quick clean test")
           shell.ok
         end
@@ -263,7 +263,7 @@ namespace :osx do
     desc "Runs tests for carthage in osx with App Bundle, Unit Test Bundle, UI Test Bundle for Nimble"
     task :nimble => [:print_versions] do
       shell.cd('OSX-Carthage', "Testing OSX-Carthage (Nimble)") do
-        with_carthage(shell, [nimble, quick]) do
+        with_carthage(shell, :osx, [nimble, quick]) do
           shell.xcodebuild("-scheme OSX-Carthage-Nimble clean test")
           shell.ok
         end
@@ -295,11 +295,60 @@ namespace :osx do
   end
 end
 
+task tvos: %w[tvos:carthage tvos:cocoapods]
+namespace :tvos do
+  task carthage: %w[tvos:carthage:quick tvos:carthage:nimble]
+  namespace :carthage do
+    desc "Runs tests for carthage in tvos with App Bundle, Unit Test Bundle, UI Test Bundle for Quick"
+    task :quick => [:print_versions] do
+      shell.cd('tvOS-Carthage', "Testing tvOS-Carthage (Quick)") do
+        with_carthage(shell, :tvos, [nimble, quick]) do
+          shell.xcodebuild("-scheme tvOS-Carthage-Quick -sdk appletvsimulator clean test")
+          shell.ok
+        end
+      end
+    end
+
+    desc "Runs tests for carthage in tvos with App Bundle, Unit Test Bundle, UI Test Bundle for Nimble"
+    task :nimble => [:print_versions] do
+      shell.cd('tvOS-Carthage', "Testing tvOS-Carthage (Nimble)") do
+        with_carthage(shell, :tvos, [nimble, quick]) do
+          shell.xcodebuild("-scheme tvOS-Carthage-Nimble -sdk appletvsimulator clean test")
+          shell.ok
+        end
+      end
+    end
+  end
+
+  task cocoapods: %w[tvos:cocoapods:quick tvos:cocoapods:nimble]
+  namespace :cocoapods do
+    desc "Runs tests for cocoapods in tvos with App Bundle, Unit Test Bundle, UI Test Bundle for Quick"
+    task :quick => [:print_versions] do
+      shell.cd('tvOS-Cocoapods', "Testing tvOS-Cocoapods (Quick)") do
+        with_cocoapods(shell) do
+          shell.xcodebuild("-scheme tvOS-Cocoapods-Quick -workspace tvOS-Cocoapods.xcworkspace -sdk appletvsimulator clean test")
+          shell.ok
+        end
+      end
+    end
+
+    desc "Runs tests for cocoapods in tvos with App Bundle, Unit Test Bundle, UI Test Bundle for Nimble"
+    task :nimble => [:print_versions] do
+      shell.cd('tvOS-Cocoapods', "Testing tvOS-Cocoapods (Nimble)") do
+        with_cocoapods(shell) do
+          shell.xcodebuild("-scheme tvOS-Cocoapods-Nimble -workspace tvOS-Cocoapods.xcworkspace -sdk appletvsimulator clean test")
+          shell.ok
+        end
+      end
+    end
+  end
+end
+
 desc "Runs all Quick related tests"
-task quick: %w[ios:carthage:quick ios:cocoapods:quick osx:carthage:quick osx:cocoapods:quick]
+task quick: %w[ios:carthage:quick ios:cocoapods:quick osx:carthage:quick osx:cocoapods:quick tvos:carthage:quick tvos:cocoapods:quick]
 
 desc "Runs all Nimble related tests"
-task nimble: %w[ios:carthage:nimble ios:cocoapods:nimble osx:carthage:nimble osx:cocoapods:nimble]
+task nimble: %w[ios:carthage:nimble ios:cocoapods:nimble osx:carthage:nimble osx:cocoapods:nimble tvos:carthage:nimble tvos:cocoapods:nimble]
 
 desc "Removes all Xcode derrived data"
 task :clean do

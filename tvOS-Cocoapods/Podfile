@@ -1,0 +1,25 @@
+use_frameworks!
+
+target 'tvOS-Cocoapods' do
+  # pod 'Quick', path: '../Vendor/Quick' # Quick doesn't support running without XCTest
+  pod 'Nimble', path: '../Vendor/Nimble'
+end
+
+target 'tvOS-Cocoapods-QuickTests' do
+  pod 'Quick', path: '../Vendor/Quick'
+  pod 'Nimble', path: '../Vendor/Nimble'
+end
+
+target 'tvOS-Cocoapods-QuickUITests' do
+  pod 'Quick', path: '../Vendor/Quick'
+  pod 'Nimble', path: '../Vendor/Nimble'
+end
+
+target 'tvOS-Cocoapods-NimbleTests' do
+  pod 'Nimble', path: '../Vendor/Nimble'
+end
+
+target 'tvOS-Cocoapods-NimbleUITests' do
+  pod 'Nimble', path: '../Vendor/Nimble'
+end
+

@@ -1,0 +1,819 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F118D3C1BDCAAB6005013A2 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F118D3A1BDCAAB6005013A2 /* Nimble.framework */; };
+		1F118D3E1BDCAABC005013A2 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F118D3B1BDCAAB6005013A2 /* Quick.framework */; };
+		1F118D3F1BDCAABD005013A2 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F118D3B1BDCAAB6005013A2 /* Quick.framework */; };
+		1F118D401BDCAAC0005013A2 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F118D3A1BDCAAB6005013A2 /* Nimble.framework */; };
+		1F118D411BDCAAC0005013A2 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F118D3A1BDCAAB6005013A2 /* Nimble.framework */; };
+		1F118D421BDCAAC0005013A2 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F118D3A1BDCAAB6005013A2 /* Nimble.framework */; };
+		1F118D431BDCAAC1005013A2 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F118D3A1BDCAAB6005013A2 /* Nimble.framework */; };
+		1F118D441BDCAAC6005013A2 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F118D3A1BDCAAB6005013A2 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F118D451BDCAAC6005013A2 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F118D3B1BDCAAB6005013A2 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F118D461BDCAAC7005013A2 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F118D3A1BDCAAB6005013A2 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F118D471BDCAAC7005013A2 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F118D3B1BDCAAB6005013A2 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F118D481BDCAACB005013A2 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F118D3A1BDCAAB6005013A2 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F118D491BDCAACC005013A2 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F118D3A1BDCAAB6005013A2 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F118D4B1BDCAD14005013A2 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F118D3A1BDCAAB6005013A2 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F6A2E811BDC9C3A009637BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2E801BDC9C3A009637BC /* AppDelegate.swift */; };
+		1F6A2E831BDC9C3A009637BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2E821BDC9C3A009637BC /* ViewController.swift */; };
+		1F6A2E861BDC9C3A009637BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A2E841BDC9C3A009637BC /* Main.storyboard */; };
+		1F6A2E881BDC9C3A009637BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A2E871BDC9C3A009637BC /* Assets.xcassets */; };
+		1F6A2EB11BDC9D33009637BC /* NimbleIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2EAF1BDC9D33009637BC /* NimbleIntegrationTests.swift */; };
+		1F6A2EB21BDC9D33009637BC /* QuickIntegrationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2EB01BDC9D33009637BC /* QuickIntegrationSpec.swift */; };
+		1F6A2EB51BDC9D4A009637BC /* NimbleIntegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2EB31BDC9D4A009637BC /* NimbleIntegrationUITests.swift */; };
+		1F6A2EB61BDC9D4A009637BC /* QuickIntegrationUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2EB41BDC9D4A009637BC /* QuickIntegrationUISpec.swift */; };
+		1F6A2EBC1BDC9D55009637BC /* NimbleIntegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2EB31BDC9D4A009637BC /* NimbleIntegrationUITests.swift */; };
+		1F6A2EC91BDC9D5B009637BC /* NimbleIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2EAF1BDC9D33009637BC /* NimbleIntegrationTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F6A2E8F1BDC9C3A009637BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F6A2E751BDC9C3A009637BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F6A2E7C1BDC9C3A009637BC;
+			remoteInfo = "tvOS-Carthage";
+		};
+		1F6A2E9A1BDC9C3A009637BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F6A2E751BDC9C3A009637BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F6A2E7C1BDC9C3A009637BC;
+			remoteInfo = "tvOS-Carthage";
+		};
+		1F6A2EB91BDC9D55009637BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F6A2E751BDC9C3A009637BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F6A2E7C1BDC9C3A009637BC;
+			remoteInfo = "tvOS-Carthage";
+		};
+		1F6A2EC61BDC9D5B009637BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F6A2E751BDC9C3A009637BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F6A2E7C1BDC9C3A009637BC;
+			remoteInfo = "tvOS-Carthage";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F118D4A1BDCAD10005013A2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1F118D4B1BDCAD14005013A2 /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2ED11BDC9DC6009637BC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1F118D461BDCAAC7005013A2 /* Nimble.framework in CopyFiles */,
+				1F118D471BDCAAC7005013A2 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2ED41BDC9DDB009637BC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1F118D441BDCAAC6005013A2 /* Nimble.framework in CopyFiles */,
+				1F118D451BDCAAC6005013A2 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2ED71BDC9DE1009637BC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1F118D481BDCAACB005013A2 /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2ED91BDC9DE8009637BC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1F118D491BDCAACC005013A2 /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1F118D3A1BDCAAB6005013A2 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/tvOS/Nimble.framework; sourceTree = "<group>"; };
+		1F118D3B1BDCAAB6005013A2 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/tvOS/Quick.framework; sourceTree = "<group>"; };
+		1F6A2E7D1BDC9C3A009637BC /* tvOS-Carthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS-Carthage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6A2E801BDC9C3A009637BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F6A2E821BDC9C3A009637BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F6A2E851BDC9C3A009637BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F6A2E871BDC9C3A009637BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F6A2E891BDC9C3A009637BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F6A2E8E1BDC9C3A009637BC /* tvOS-Carthage-QuickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tvOS-Carthage-QuickTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6A2E941BDC9C3A009637BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F6A2E991BDC9C3A009637BC /* tvOS-Carthage-QuickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tvOS-Carthage-QuickUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6A2E9F1BDC9C3A009637BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F6A2EAF1BDC9D33009637BC /* NimbleIntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NimbleIntegrationTests.swift; sourceTree = "<group>"; };
+		1F6A2EB01BDC9D33009637BC /* QuickIntegrationSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickIntegrationSpec.swift; sourceTree = "<group>"; };
+		1F6A2EB31BDC9D4A009637BC /* NimbleIntegrationUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NimbleIntegrationUITests.swift; sourceTree = "<group>"; };
+		1F6A2EB41BDC9D4A009637BC /* QuickIntegrationUISpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickIntegrationUISpec.swift; sourceTree = "<group>"; };
+		1F6A2EC21BDC9D55009637BC /* tvOS-Carthage-NimbleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tvOS-Carthage-NimbleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6A2ECF1BDC9D5B009637BC /* tvOS-Carthage-NimbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tvOS-Carthage-NimbleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F6A2E7A1BDC9C3A009637BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F118D3C1BDCAAB6005013A2 /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2E8B1BDC9C3A009637BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F118D3E1BDCAABC005013A2 /* Quick.framework in Frameworks */,
+				1F118D401BDCAAC0005013A2 /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2E961BDC9C3A009637BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F118D3F1BDCAABD005013A2 /* Quick.framework in Frameworks */,
+				1F118D411BDCAAC0005013A2 /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2EBD1BDC9D55009637BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F118D431BDCAAC1005013A2 /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2ECA1BDC9D5B009637BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F118D421BDCAAC0005013A2 /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F6A2E741BDC9C3A009637BC = {
+			isa = PBXGroup;
+			children = (
+				1F118D3A1BDCAAB6005013A2 /* Nimble.framework */,
+				1F118D3B1BDCAAB6005013A2 /* Quick.framework */,
+				1F6A2E7F1BDC9C3A009637BC /* tvOS-Carthage */,
+				1F6A2E911BDC9C3A009637BC /* tvOS-CarthageTests */,
+				1F6A2E9C1BDC9C3A009637BC /* tvOS-CarthageUITests */,
+				1F6A2E7E1BDC9C3A009637BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F6A2E7E1BDC9C3A009637BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F6A2E7D1BDC9C3A009637BC /* tvOS-Carthage.app */,
+				1F6A2E8E1BDC9C3A009637BC /* tvOS-Carthage-QuickTests.xctest */,
+				1F6A2E991BDC9C3A009637BC /* tvOS-Carthage-QuickUITests.xctest */,
+				1F6A2EC21BDC9D55009637BC /* tvOS-Carthage-NimbleUITests.xctest */,
+				1F6A2ECF1BDC9D5B009637BC /* tvOS-Carthage-NimbleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F6A2E7F1BDC9C3A009637BC /* tvOS-Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				1F6A2E801BDC9C3A009637BC /* AppDelegate.swift */,
+				1F6A2E821BDC9C3A009637BC /* ViewController.swift */,
+				1F6A2E841BDC9C3A009637BC /* Main.storyboard */,
+				1F6A2E871BDC9C3A009637BC /* Assets.xcassets */,
+				1F6A2E891BDC9C3A009637BC /* Info.plist */,
+			);
+			path = "tvOS-Carthage";
+			sourceTree = "<group>";
+		};
+		1F6A2E911BDC9C3A009637BC /* tvOS-CarthageTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F6A2EAF1BDC9D33009637BC /* NimbleIntegrationTests.swift */,
+				1F6A2EB01BDC9D33009637BC /* QuickIntegrationSpec.swift */,
+				1F6A2E941BDC9C3A009637BC /* Info.plist */,
+			);
+			path = "tvOS-CarthageTests";
+			sourceTree = "<group>";
+		};
+		1F6A2E9C1BDC9C3A009637BC /* tvOS-CarthageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F6A2EB31BDC9D4A009637BC /* NimbleIntegrationUITests.swift */,
+				1F6A2EB41BDC9D4A009637BC /* QuickIntegrationUISpec.swift */,
+				1F6A2E9F1BDC9C3A009637BC /* Info.plist */,
+			);
+			path = "tvOS-CarthageUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F6A2E7C1BDC9C3A009637BC /* tvOS-Carthage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6A2EA21BDC9C3A009637BC /* Build configuration list for PBXNativeTarget "tvOS-Carthage" */;
+			buildPhases = (
+				1F6A2E791BDC9C3A009637BC /* Sources */,
+				1F6A2E7A1BDC9C3A009637BC /* Frameworks */,
+				1F6A2E7B1BDC9C3A009637BC /* Resources */,
+				1F118D4A1BDCAD10005013A2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tvOS-Carthage";
+			productName = "tvOS-Carthage";
+			productReference = 1F6A2E7D1BDC9C3A009637BC /* tvOS-Carthage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F6A2E8D1BDC9C3A009637BC /* tvOS-Carthage-QuickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6A2EA51BDC9C3A009637BC /* Build configuration list for PBXNativeTarget "tvOS-Carthage-QuickTests" */;
+			buildPhases = (
+				1F6A2E8A1BDC9C3A009637BC /* Sources */,
+				1F6A2E8B1BDC9C3A009637BC /* Frameworks */,
+				1F6A2E8C1BDC9C3A009637BC /* Resources */,
+				1F6A2ED41BDC9DDB009637BC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F6A2E901BDC9C3A009637BC /* PBXTargetDependency */,
+			);
+			name = "tvOS-Carthage-QuickTests";
+			productName = "tvOS-CarthageTests";
+			productReference = 1F6A2E8E1BDC9C3A009637BC /* tvOS-Carthage-QuickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F6A2E981BDC9C3A009637BC /* tvOS-Carthage-QuickUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6A2EA81BDC9C3A009637BC /* Build configuration list for PBXNativeTarget "tvOS-Carthage-QuickUITests" */;
+			buildPhases = (
+				1F6A2E951BDC9C3A009637BC /* Sources */,
+				1F6A2E961BDC9C3A009637BC /* Frameworks */,
+				1F6A2E971BDC9C3A009637BC /* Resources */,
+				1F6A2ED11BDC9DC6009637BC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F6A2E9B1BDC9C3A009637BC /* PBXTargetDependency */,
+			);
+			name = "tvOS-Carthage-QuickUITests";
+			productName = "tvOS-CarthageUITests";
+			productReference = 1F6A2E991BDC9C3A009637BC /* tvOS-Carthage-QuickUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1F6A2EB71BDC9D55009637BC /* tvOS-Carthage-NimbleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6A2EBF1BDC9D55009637BC /* Build configuration list for PBXNativeTarget "tvOS-Carthage-NimbleUITests" */;
+			buildPhases = (
+				1F6A2EBA1BDC9D55009637BC /* Sources */,
+				1F6A2EBD1BDC9D55009637BC /* Frameworks */,
+				1F6A2EBE1BDC9D55009637BC /* Resources */,
+				1F6A2ED91BDC9DE8009637BC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F6A2EB81BDC9D55009637BC /* PBXTargetDependency */,
+			);
+			name = "tvOS-Carthage-NimbleUITests";
+			productName = "tvOS-CarthageUITests";
+			productReference = 1F6A2EC21BDC9D55009637BC /* tvOS-Carthage-NimbleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1F6A2EC41BDC9D5B009637BC /* tvOS-Carthage-NimbleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6A2ECC1BDC9D5B009637BC /* Build configuration list for PBXNativeTarget "tvOS-Carthage-NimbleTests" */;
+			buildPhases = (
+				1F6A2EC71BDC9D5B009637BC /* Sources */,
+				1F6A2ECA1BDC9D5B009637BC /* Frameworks */,
+				1F6A2ECB1BDC9D5B009637BC /* Resources */,
+				1F6A2ED71BDC9DE1009637BC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F6A2EC51BDC9D5B009637BC /* PBXTargetDependency */,
+			);
+			name = "tvOS-Carthage-NimbleTests";
+			productName = "tvOS-CarthageTests";
+			productReference = 1F6A2ECF1BDC9D5B009637BC /* tvOS-Carthage-NimbleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F6A2E751BDC9C3A009637BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Jeff Hui";
+				TargetAttributes = {
+					1F6A2E7C1BDC9C3A009637BC = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					1F6A2E8D1BDC9C3A009637BC = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 1F6A2E7C1BDC9C3A009637BC;
+					};
+					1F6A2E981BDC9C3A009637BC = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 1F6A2E7C1BDC9C3A009637BC;
+					};
+				};
+			};
+			buildConfigurationList = 1F6A2E781BDC9C3A009637BC /* Build configuration list for PBXProject "tvOS-Carthage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F6A2E741BDC9C3A009637BC;
+			productRefGroup = 1F6A2E7E1BDC9C3A009637BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F6A2E7C1BDC9C3A009637BC /* tvOS-Carthage */,
+				1F6A2E8D1BDC9C3A009637BC /* tvOS-Carthage-QuickTests */,
+				1F6A2E981BDC9C3A009637BC /* tvOS-Carthage-QuickUITests */,
+				1F6A2EC41BDC9D5B009637BC /* tvOS-Carthage-NimbleTests */,
+				1F6A2EB71BDC9D55009637BC /* tvOS-Carthage-NimbleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F6A2E7B1BDC9C3A009637BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6A2E881BDC9C3A009637BC /* Assets.xcassets in Resources */,
+				1F6A2E861BDC9C3A009637BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2E8C1BDC9C3A009637BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2E971BDC9C3A009637BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2EBE1BDC9D55009637BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2ECB1BDC9D5B009637BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F6A2E791BDC9C3A009637BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6A2E831BDC9C3A009637BC /* ViewController.swift in Sources */,
+				1F6A2E811BDC9C3A009637BC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2E8A1BDC9C3A009637BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6A2EB21BDC9D33009637BC /* QuickIntegrationSpec.swift in Sources */,
+				1F6A2EB11BDC9D33009637BC /* NimbleIntegrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2E951BDC9C3A009637BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6A2EB61BDC9D4A009637BC /* QuickIntegrationUISpec.swift in Sources */,
+				1F6A2EB51BDC9D4A009637BC /* NimbleIntegrationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2EBA1BDC9D55009637BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6A2EBC1BDC9D55009637BC /* NimbleIntegrationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2EC71BDC9D5B009637BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6A2EC91BDC9D5B009637BC /* NimbleIntegrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F6A2E901BDC9C3A009637BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F6A2E7C1BDC9C3A009637BC /* tvOS-Carthage */;
+			targetProxy = 1F6A2E8F1BDC9C3A009637BC /* PBXContainerItemProxy */;
+		};
+		1F6A2E9B1BDC9C3A009637BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F6A2E7C1BDC9C3A009637BC /* tvOS-Carthage */;
+			targetProxy = 1F6A2E9A1BDC9C3A009637BC /* PBXContainerItemProxy */;
+		};
+		1F6A2EB81BDC9D55009637BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F6A2E7C1BDC9C3A009637BC /* tvOS-Carthage */;
+			targetProxy = 1F6A2EB91BDC9D55009637BC /* PBXContainerItemProxy */;
+		};
+		1F6A2EC51BDC9D5B009637BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F6A2E7C1BDC9C3A009637BC /* tvOS-Carthage */;
+			targetProxy = 1F6A2EC61BDC9D5B009637BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F6A2E841BDC9C3A009637BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F6A2E851BDC9C3A009637BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F6A2EA01BDC9C3A009637BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		1F6A2EA11BDC9C3A009637BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F6A2EA31BDC9C3A009637BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "tvOS-Carthage/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.tvOS-Carthage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F6A2EA41BDC9C3A009637BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "tvOS-Carthage/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.tvOS-Carthage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1F6A2EA61BDC9C3A009637BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "tvOS-CarthageTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.tvOS-CarthageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOS-Carthage.app/tvOS-Carthage";
+			};
+			name = Debug;
+		};
+		1F6A2EA71BDC9C3A009637BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "tvOS-CarthageTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.tvOS-CarthageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOS-Carthage.app/tvOS-Carthage";
+			};
+			name = Release;
+		};
+		1F6A2EA91BDC9C3A009637BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "tvOS-CarthageUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.tvOS-CarthageUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "tvOS-Carthage";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1F6A2EAA1BDC9C3A009637BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "tvOS-CarthageUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.tvOS-CarthageUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "tvOS-Carthage";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		1F6A2EC01BDC9D55009637BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "tvOS-CarthageUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.tvOS-CarthageUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "tvOS-Carthage";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1F6A2EC11BDC9D55009637BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "tvOS-CarthageUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.tvOS-CarthageUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "tvOS-Carthage";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		1F6A2ECD1BDC9D5B009637BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "tvOS-CarthageTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.tvOS-CarthageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOS-Carthage.app/tvOS-Carthage";
+			};
+			name = Debug;
+		};
+		1F6A2ECE1BDC9D5B009637BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "tvOS-CarthageTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.tvOS-CarthageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOS-Carthage.app/tvOS-Carthage";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F6A2E781BDC9C3A009637BC /* Build configuration list for PBXProject "tvOS-Carthage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6A2EA01BDC9C3A009637BC /* Debug */,
+				1F6A2EA11BDC9C3A009637BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F6A2EA21BDC9C3A009637BC /* Build configuration list for PBXNativeTarget "tvOS-Carthage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6A2EA31BDC9C3A009637BC /* Debug */,
+				1F6A2EA41BDC9C3A009637BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F6A2EA51BDC9C3A009637BC /* Build configuration list for PBXNativeTarget "tvOS-Carthage-QuickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6A2EA61BDC9C3A009637BC /* Debug */,
+				1F6A2EA71BDC9C3A009637BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F6A2EA81BDC9C3A009637BC /* Build configuration list for PBXNativeTarget "tvOS-Carthage-QuickUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6A2EA91BDC9C3A009637BC /* Debug */,
+				1F6A2EAA1BDC9C3A009637BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F6A2EBF1BDC9D55009637BC /* Build configuration list for PBXNativeTarget "tvOS-Carthage-NimbleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6A2EC01BDC9D55009637BC /* Debug */,
+				1F6A2EC11BDC9D55009637BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F6A2ECC1BDC9D5B009637BC /* Build configuration list for PBXNativeTarget "tvOS-Carthage-NimbleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6A2ECD1BDC9D5B009637BC /* Debug */,
+				1F6A2ECE1BDC9D5B009637BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F6A2E751BDC9C3A009637BC /* Project object */;
+}

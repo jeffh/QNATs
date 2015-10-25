@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "54FA4C0FF1EB1AF204CC60500363DB0A41041F99",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "95438028B10BBB846574013D29F154A00556A9D1" : 0,
+    "54FA4C0FF1EB1AF204CC60500363DB0A41041F99" : 0,
+    "D0725CAC6FF2D66F2C83C2C48DC12106D42DAA64" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "910F212C-D28B-4BBE-8DD7-7820E15B4904",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "95438028B10BBB846574013D29F154A00556A9D1" : "QNATs\/Vendor\/Nimble\/",
+    "54FA4C0FF1EB1AF204CC60500363DB0A41041F99" : "QNATs\/",
+    "D0725CAC6FF2D66F2C83C2C48DC12106D42DAA64" : "QNATs\/Vendor\/Quick\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "tvOS-Cocoapods",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "tvOS-Cocoapods\/tvOS-Cocoapods.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:jeffh\/NATs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54FA4C0FF1EB1AF204CC60500363DB0A41041F99"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/jeff\/workspace\/Nimble",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "95438028B10BBB846574013D29F154A00556A9D1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/jeff\/workspace\/Quick",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D0725CAC6FF2D66F2C83C2C48DC12106D42DAA64"
+    }
+  ]
+}

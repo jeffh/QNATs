@@ -1,0 +1,968 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B46ECD2EE0194CC70FE72FC /* Pods_tvOS_Cocoapods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FB3BD41E1B44EAD79EC5A5 /* Pods_tvOS_Cocoapods.framework */; };
+		1F6A2EEE1BDC9E14009637BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2EED1BDC9E14009637BC /* AppDelegate.swift */; };
+		1F6A2EF01BDC9E14009637BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2EEF1BDC9E14009637BC /* ViewController.swift */; };
+		1F6A2EF31BDC9E14009637BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A2EF11BDC9E14009637BC /* Main.storyboard */; };
+		1F6A2EF51BDC9E14009637BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A2EF41BDC9E14009637BC /* Assets.xcassets */; };
+		1F6A2F1A1BDC9E7E009637BC /* NimbleIntegrationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2F181BDC9E7E009637BC /* NimbleIntegrationTest.swift */; };
+		1F6A2F1B1BDC9E7E009637BC /* QuickIntegrationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2F191BDC9E7E009637BC /* QuickIntegrationSpec.swift */; };
+		1F6A2F1E1BDC9E91009637BC /* NimbleIntegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2F1C1BDC9E91009637BC /* NimbleIntegrationUITests.swift */; };
+		1F6A2F1F1BDC9E91009637BC /* QuickIntegrationUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2F1D1BDC9E91009637BC /* QuickIntegrationUISpec.swift */; };
+		1F6A2F241BDC9EB0009637BC /* QuickIntegrationUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2F1D1BDC9E91009637BC /* QuickIntegrationUISpec.swift */; };
+		1F6A2F251BDC9EB0009637BC /* NimbleIntegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2F1C1BDC9E91009637BC /* NimbleIntegrationUITests.swift */; };
+		1F6A2F311BDC9EB5009637BC /* QuickIntegrationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2F191BDC9E7E009637BC /* QuickIntegrationSpec.swift */; };
+		1F6A2F321BDC9EB5009637BC /* NimbleIntegrationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2F181BDC9E7E009637BC /* NimbleIntegrationTest.swift */; };
+		6CB02C87BC73C684BCD415B5 /* Pods_tvOS_Cocoapods_NimbleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC024BF0307168E76401B04D /* Pods_tvOS_Cocoapods_NimbleUITests.framework */; };
+		B1324B483DCEAA49088EAE09 /* Pods_tvOS_Cocoapods_QuickUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F08322E606ECC7B1FC241E8 /* Pods_tvOS_Cocoapods_QuickUITests.framework */; };
+		E34F0B8E177FA70C5FD5B2CB /* Pods_tvOS_Cocoapods_NimbleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AD2138B5147C226CE8D6E1 /* Pods_tvOS_Cocoapods_NimbleTests.framework */; };
+		FFBD582A22C07D65375F26E0 /* Pods_tvOS_Cocoapods_QuickTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 794C30B5C8E4EEE66840F718 /* Pods_tvOS_Cocoapods_QuickTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F6A2EFC1BDC9E14009637BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F6A2EE21BDC9E14009637BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F6A2EE91BDC9E14009637BC;
+			remoteInfo = "tvOS-Cocoapods";
+		};
+		1F6A2F071BDC9E14009637BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F6A2EE21BDC9E14009637BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F6A2EE91BDC9E14009637BC;
+			remoteInfo = "tvOS-Cocoapods";
+		};
+		1F6A2F221BDC9EB0009637BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F6A2EE21BDC9E14009637BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F6A2EE91BDC9E14009637BC;
+			remoteInfo = "tvOS-Cocoapods";
+		};
+		1F6A2F2F1BDC9EB5009637BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F6A2EE21BDC9E14009637BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F6A2EE91BDC9E14009637BC;
+			remoteInfo = "tvOS-Cocoapods";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11AD2138B5147C226CE8D6E1 /* Pods_tvOS_Cocoapods_NimbleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tvOS_Cocoapods_NimbleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F08322E606ECC7B1FC241E8 /* Pods_tvOS_Cocoapods_QuickUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tvOS_Cocoapods_QuickUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6A2EEA1BDC9E14009637BC /* tvOS-Cocoapods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS-Cocoapods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6A2EED1BDC9E14009637BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F6A2EEF1BDC9E14009637BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F6A2EF21BDC9E14009637BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F6A2EF41BDC9E14009637BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F6A2EF61BDC9E14009637BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F6A2EFB1BDC9E14009637BC /* tvOS-Cocoapods-QuickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tvOS-Cocoapods-QuickTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6A2F011BDC9E14009637BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F6A2F061BDC9E14009637BC /* tvOS-Cocoapods-QuickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tvOS-Cocoapods-QuickUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6A2F0C1BDC9E14009637BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F6A2F181BDC9E7E009637BC /* NimbleIntegrationTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NimbleIntegrationTest.swift; sourceTree = "<group>"; };
+		1F6A2F191BDC9E7E009637BC /* QuickIntegrationSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickIntegrationSpec.swift; sourceTree = "<group>"; };
+		1F6A2F1C1BDC9E91009637BC /* NimbleIntegrationUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NimbleIntegrationUITests.swift; sourceTree = "<group>"; };
+		1F6A2F1D1BDC9E91009637BC /* QuickIntegrationUISpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickIntegrationUISpec.swift; sourceTree = "<group>"; };
+		1F6A2F2B1BDC9EB0009637BC /* tvOS-Cocoapods-NimbleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tvOS-Cocoapods-NimbleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6A2F381BDC9EB5009637BC /* tvOS-Cocoapods-NimbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tvOS-Cocoapods-NimbleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BA19769DB072CADDFCF9339 /* Pods-tvOS-Cocoapods-QuickTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS-Cocoapods-QuickTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tvOS-Cocoapods-QuickTests/Pods-tvOS-Cocoapods-QuickTests.release.xcconfig"; sourceTree = "<group>"; };
+		3DB9CA249854B8A17F86D52A /* Pods-tvOS-Cocoapods-QuickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS-Cocoapods-QuickTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tvOS-Cocoapods-QuickTests/Pods-tvOS-Cocoapods-QuickTests.debug.xcconfig"; sourceTree = "<group>"; };
+		42AF01ADE5E57FB7D04A5252 /* Pods-tvOS-Cocoapods-NimbleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS-Cocoapods-NimbleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tvOS-Cocoapods-NimbleTests/Pods-tvOS-Cocoapods-NimbleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4799387E260FBB1405F1BBAB /* Pods-tvOS-Cocoapods-QuickUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS-Cocoapods-QuickUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tvOS-Cocoapods-QuickUITests/Pods-tvOS-Cocoapods-QuickUITests.release.xcconfig"; sourceTree = "<group>"; };
+		585CC800CC91409FA17DFB6D /* Pods-tvOS-Cocoapods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS-Cocoapods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tvOS-Cocoapods/Pods-tvOS-Cocoapods.debug.xcconfig"; sourceTree = "<group>"; };
+		6081852A4F801BD85C2FCFDB /* Pods-tvOS-Cocoapods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS-Cocoapods.release.xcconfig"; path = "Pods/Target Support Files/Pods-tvOS-Cocoapods/Pods-tvOS-Cocoapods.release.xcconfig"; sourceTree = "<group>"; };
+		6E3BF0C8CEFB26F329B4EC94 /* Pods-tvOS-Cocoapods-NimbleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS-Cocoapods-NimbleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tvOS-Cocoapods-NimbleUITests/Pods-tvOS-Cocoapods-NimbleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		727DEE575179E8769A2EA128 /* Pods-tvOS-Cocoapods-NimbleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS-Cocoapods-NimbleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tvOS-Cocoapods-NimbleUITests/Pods-tvOS-Cocoapods-NimbleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		794C30B5C8E4EEE66840F718 /* Pods_tvOS_Cocoapods_QuickTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tvOS_Cocoapods_QuickTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79FB3BD41E1B44EAD79EC5A5 /* Pods_tvOS_Cocoapods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tvOS_Cocoapods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90381B062D0E1524978897B6 /* Pods-tvOS-Cocoapods-QuickUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS-Cocoapods-QuickUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tvOS-Cocoapods-QuickUITests/Pods-tvOS-Cocoapods-QuickUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC024BF0307168E76401B04D /* Pods_tvOS_Cocoapods_NimbleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tvOS_Cocoapods_NimbleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB8572F62CA39C3A709BA20 /* Pods-tvOS-Cocoapods-NimbleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS-Cocoapods-NimbleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tvOS-Cocoapods-NimbleTests/Pods-tvOS-Cocoapods-NimbleTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F6A2EE71BDC9E14009637BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B46ECD2EE0194CC70FE72FC /* Pods_tvOS_Cocoapods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2EF81BDC9E14009637BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBD582A22C07D65375F26E0 /* Pods_tvOS_Cocoapods_QuickTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2F031BDC9E14009637BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1324B483DCEAA49088EAE09 /* Pods_tvOS_Cocoapods_QuickUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2F261BDC9EB0009637BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB02C87BC73C684BCD415B5 /* Pods_tvOS_Cocoapods_NimbleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2F331BDC9EB5009637BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34F0B8E177FA70C5FD5B2CB /* Pods_tvOS_Cocoapods_NimbleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F6A2EE11BDC9E14009637BC = {
+			isa = PBXGroup;
+			children = (
+				1F6A2EEC1BDC9E14009637BC /* tvOS-Cocoapods */,
+				1F6A2EFE1BDC9E14009637BC /* tvOS-CocoapodsTests */,
+				1F6A2F091BDC9E14009637BC /* tvOS-CocoapodsUITests */,
+				1F6A2EEB1BDC9E14009637BC /* Products */,
+				925D2F7CF9F6825F79A6CD66 /* Pods */,
+				4D5490B9DA6969B8FD525927 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1F6A2EEB1BDC9E14009637BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F6A2EEA1BDC9E14009637BC /* tvOS-Cocoapods.app */,
+				1F6A2EFB1BDC9E14009637BC /* tvOS-Cocoapods-QuickTests.xctest */,
+				1F6A2F061BDC9E14009637BC /* tvOS-Cocoapods-QuickUITests.xctest */,
+				1F6A2F2B1BDC9EB0009637BC /* tvOS-Cocoapods-NimbleUITests.xctest */,
+				1F6A2F381BDC9EB5009637BC /* tvOS-Cocoapods-NimbleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F6A2EEC1BDC9E14009637BC /* tvOS-Cocoapods */ = {
+			isa = PBXGroup;
+			children = (
+				1F6A2EED1BDC9E14009637BC /* AppDelegate.swift */,
+				1F6A2EEF1BDC9E14009637BC /* ViewController.swift */,
+				1F6A2EF11BDC9E14009637BC /* Main.storyboard */,
+				1F6A2EF41BDC9E14009637BC /* Assets.xcassets */,
+				1F6A2EF61BDC9E14009637BC /* Info.plist */,
+			);
+			path = "tvOS-Cocoapods";
+			sourceTree = "<group>";
+		};
+		1F6A2EFE1BDC9E14009637BC /* tvOS-CocoapodsTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F6A2F181BDC9E7E009637BC /* NimbleIntegrationTest.swift */,
+				1F6A2F191BDC9E7E009637BC /* QuickIntegrationSpec.swift */,
+				1F6A2F011BDC9E14009637BC /* Info.plist */,
+			);
+			path = "tvOS-CocoapodsTests";
+			sourceTree = "<group>";
+		};
+		1F6A2F091BDC9E14009637BC /* tvOS-CocoapodsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F6A2F1C1BDC9E91009637BC /* NimbleIntegrationUITests.swift */,
+				1F6A2F1D1BDC9E91009637BC /* QuickIntegrationUISpec.swift */,
+				1F6A2F0C1BDC9E14009637BC /* Info.plist */,
+			);
+			path = "tvOS-CocoapodsUITests";
+			sourceTree = "<group>";
+		};
+		4D5490B9DA6969B8FD525927 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79FB3BD41E1B44EAD79EC5A5 /* Pods_tvOS_Cocoapods.framework */,
+				11AD2138B5147C226CE8D6E1 /* Pods_tvOS_Cocoapods_NimbleTests.framework */,
+				EC024BF0307168E76401B04D /* Pods_tvOS_Cocoapods_NimbleUITests.framework */,
+				794C30B5C8E4EEE66840F718 /* Pods_tvOS_Cocoapods_QuickTests.framework */,
+				1F08322E606ECC7B1FC241E8 /* Pods_tvOS_Cocoapods_QuickUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		925D2F7CF9F6825F79A6CD66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				585CC800CC91409FA17DFB6D /* Pods-tvOS-Cocoapods.debug.xcconfig */,
+				6081852A4F801BD85C2FCFDB /* Pods-tvOS-Cocoapods.release.xcconfig */,
+				42AF01ADE5E57FB7D04A5252 /* Pods-tvOS-Cocoapods-NimbleTests.debug.xcconfig */,
+				FAB8572F62CA39C3A709BA20 /* Pods-tvOS-Cocoapods-NimbleTests.release.xcconfig */,
+				727DEE575179E8769A2EA128 /* Pods-tvOS-Cocoapods-NimbleUITests.debug.xcconfig */,
+				6E3BF0C8CEFB26F329B4EC94 /* Pods-tvOS-Cocoapods-NimbleUITests.release.xcconfig */,
+				3DB9CA249854B8A17F86D52A /* Pods-tvOS-Cocoapods-QuickTests.debug.xcconfig */,
+				3BA19769DB072CADDFCF9339 /* Pods-tvOS-Cocoapods-QuickTests.release.xcconfig */,
+				90381B062D0E1524978897B6 /* Pods-tvOS-Cocoapods-QuickUITests.debug.xcconfig */,
+				4799387E260FBB1405F1BBAB /* Pods-tvOS-Cocoapods-QuickUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F6A2EE91BDC9E14009637BC /* tvOS-Cocoapods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6A2F0F1BDC9E14009637BC /* Build configuration list for PBXNativeTarget "tvOS-Cocoapods" */;
+			buildPhases = (
+				820F67FAECD282DEF234FF7E /* Check Pods Manifest.lock */,
+				1F6A2EE61BDC9E14009637BC /* Sources */,
+				1F6A2EE71BDC9E14009637BC /* Frameworks */,
+				1F6A2EE81BDC9E14009637BC /* Resources */,
+				41204B8ABF78209A6E79FEDB /* Embed Pods Frameworks */,
+				DAD380518FB9B2A59F423CBF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tvOS-Cocoapods";
+			productName = "tvOS-Cocoapods";
+			productReference = 1F6A2EEA1BDC9E14009637BC /* tvOS-Cocoapods.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F6A2EFA1BDC9E14009637BC /* tvOS-Cocoapods-QuickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6A2F121BDC9E14009637BC /* Build configuration list for PBXNativeTarget "tvOS-Cocoapods-QuickTests" */;
+			buildPhases = (
+				5E392F853D6B38B49BC05920 /* Check Pods Manifest.lock */,
+				1F6A2EF71BDC9E14009637BC /* Sources */,
+				1F6A2EF81BDC9E14009637BC /* Frameworks */,
+				1F6A2EF91BDC9E14009637BC /* Resources */,
+				846D50A30A2F2C671277DAB0 /* Embed Pods Frameworks */,
+				A0176AA8D80A7B79988901EF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F6A2EFD1BDC9E14009637BC /* PBXTargetDependency */,
+			);
+			name = "tvOS-Cocoapods-QuickTests";
+			productName = "tvOS-CocoapodsTests";
+			productReference = 1F6A2EFB1BDC9E14009637BC /* tvOS-Cocoapods-QuickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F6A2F051BDC9E14009637BC /* tvOS-Cocoapods-QuickUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6A2F151BDC9E14009637BC /* Build configuration list for PBXNativeTarget "tvOS-Cocoapods-QuickUITests" */;
+			buildPhases = (
+				4AE994F2D3FF72D61B6BB8B4 /* Check Pods Manifest.lock */,
+				1F6A2F021BDC9E14009637BC /* Sources */,
+				1F6A2F031BDC9E14009637BC /* Frameworks */,
+				1F6A2F041BDC9E14009637BC /* Resources */,
+				352167FDC059CF5F44942050 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F6A2F081BDC9E14009637BC /* PBXTargetDependency */,
+			);
+			name = "tvOS-Cocoapods-QuickUITests";
+			productName = "tvOS-CocoapodsUITests";
+			productReference = 1F6A2F061BDC9E14009637BC /* tvOS-Cocoapods-QuickUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1F6A2F201BDC9EB0009637BC /* tvOS-Cocoapods-NimbleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6A2F281BDC9EB0009637BC /* Build configuration list for PBXNativeTarget "tvOS-Cocoapods-NimbleUITests" */;
+			buildPhases = (
+				8EBE9AA9CAAE340BB22960B6 /* Check Pods Manifest.lock */,
+				1F6A2F231BDC9EB0009637BC /* Sources */,
+				1F6A2F261BDC9EB0009637BC /* Frameworks */,
+				1F6A2F271BDC9EB0009637BC /* Resources */,
+				7A48FA26B56B5715978A6CE8 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F6A2F211BDC9EB0009637BC /* PBXTargetDependency */,
+			);
+			name = "tvOS-Cocoapods-NimbleUITests";
+			productName = "tvOS-CocoapodsUITests";
+			productReference = 1F6A2F2B1BDC9EB0009637BC /* tvOS-Cocoapods-NimbleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1F6A2F2D1BDC9EB5009637BC /* tvOS-Cocoapods-NimbleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6A2F351BDC9EB5009637BC /* Build configuration list for PBXNativeTarget "tvOS-Cocoapods-NimbleTests" */;
+			buildPhases = (
+				277A53E3416286B47912488F /* Check Pods Manifest.lock */,
+				1F6A2F301BDC9EB5009637BC /* Sources */,
+				1F6A2F331BDC9EB5009637BC /* Frameworks */,
+				1F6A2F341BDC9EB5009637BC /* Resources */,
+				A378F843F6DC7D11262C67DC /* Embed Pods Frameworks */,
+				92B1742F3414C53BB4C43A28 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F6A2F2E1BDC9EB5009637BC /* PBXTargetDependency */,
+			);
+			name = "tvOS-Cocoapods-NimbleTests";
+			productName = "tvOS-CocoapodsTests";
+			productReference = 1F6A2F381BDC9EB5009637BC /* tvOS-Cocoapods-NimbleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F6A2EE21BDC9E14009637BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Jeff Hui";
+				TargetAttributes = {
+					1F6A2EE91BDC9E14009637BC = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					1F6A2EFA1BDC9E14009637BC = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 1F6A2EE91BDC9E14009637BC;
+					};
+					1F6A2F051BDC9E14009637BC = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 1F6A2EE91BDC9E14009637BC;
+					};
+					1F6A2F201BDC9EB0009637BC = {
+						TestTargetID = 1F6A2EE91BDC9E14009637BC;
+					};
+				};
+			};
+			buildConfigurationList = 1F6A2EE51BDC9E14009637BC /* Build configuration list for PBXProject "tvOS-Cocoapods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F6A2EE11BDC9E14009637BC;
+			productRefGroup = 1F6A2EEB1BDC9E14009637BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F6A2EE91BDC9E14009637BC /* tvOS-Cocoapods */,
+				1F6A2EFA1BDC9E14009637BC /* tvOS-Cocoapods-QuickTests */,
+				1F6A2F051BDC9E14009637BC /* tvOS-Cocoapods-QuickUITests */,
+				1F6A2F2D1BDC9EB5009637BC /* tvOS-Cocoapods-NimbleTests */,
+				1F6A2F201BDC9EB0009637BC /* tvOS-Cocoapods-NimbleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F6A2EE81BDC9E14009637BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6A2EF51BDC9E14009637BC /* Assets.xcassets in Resources */,
+				1F6A2EF31BDC9E14009637BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2EF91BDC9E14009637BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2F041BDC9E14009637BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2F271BDC9EB0009637BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2F341BDC9EB5009637BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		277A53E3416286B47912488F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		352167FDC059CF5F44942050 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tvOS-Cocoapods-QuickUITests/Pods-tvOS-Cocoapods-QuickUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41204B8ABF78209A6E79FEDB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tvOS-Cocoapods/Pods-tvOS-Cocoapods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AE994F2D3FF72D61B6BB8B4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5E392F853D6B38B49BC05920 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7A48FA26B56B5715978A6CE8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tvOS-Cocoapods-NimbleUITests/Pods-tvOS-Cocoapods-NimbleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		820F67FAECD282DEF234FF7E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		846D50A30A2F2C671277DAB0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tvOS-Cocoapods-QuickTests/Pods-tvOS-Cocoapods-QuickTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EBE9AA9CAAE340BB22960B6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		92B1742F3414C53BB4C43A28 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tvOS-Cocoapods-NimbleTests/Pods-tvOS-Cocoapods-NimbleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0176AA8D80A7B79988901EF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tvOS-Cocoapods-QuickTests/Pods-tvOS-Cocoapods-QuickTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A378F843F6DC7D11262C67DC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tvOS-Cocoapods-NimbleTests/Pods-tvOS-Cocoapods-NimbleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAD380518FB9B2A59F423CBF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tvOS-Cocoapods/Pods-tvOS-Cocoapods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F6A2EE61BDC9E14009637BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6A2EF01BDC9E14009637BC /* ViewController.swift in Sources */,
+				1F6A2EEE1BDC9E14009637BC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2EF71BDC9E14009637BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6A2F1B1BDC9E7E009637BC /* QuickIntegrationSpec.swift in Sources */,
+				1F6A2F1A1BDC9E7E009637BC /* NimbleIntegrationTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2F021BDC9E14009637BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6A2F1F1BDC9E91009637BC /* QuickIntegrationUISpec.swift in Sources */,
+				1F6A2F1E1BDC9E91009637BC /* NimbleIntegrationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2F231BDC9EB0009637BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6A2F241BDC9EB0009637BC /* QuickIntegrationUISpec.swift in Sources */,
+				1F6A2F251BDC9EB0009637BC /* NimbleIntegrationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6A2F301BDC9EB5009637BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6A2F311BDC9EB5009637BC /* QuickIntegrationSpec.swift in Sources */,
+				1F6A2F321BDC9EB5009637BC /* NimbleIntegrationTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F6A2EFD1BDC9E14009637BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F6A2EE91BDC9E14009637BC /* tvOS-Cocoapods */;
+			targetProxy = 1F6A2EFC1BDC9E14009637BC /* PBXContainerItemProxy */;
+		};
+		1F6A2F081BDC9E14009637BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F6A2EE91BDC9E14009637BC /* tvOS-Cocoapods */;
+			targetProxy = 1F6A2F071BDC9E14009637BC /* PBXContainerItemProxy */;
+		};
+		1F6A2F211BDC9EB0009637BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F6A2EE91BDC9E14009637BC /* tvOS-Cocoapods */;
+			targetProxy = 1F6A2F221BDC9EB0009637BC /* PBXContainerItemProxy */;
+		};
+		1F6A2F2E1BDC9EB5009637BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F6A2EE91BDC9E14009637BC /* tvOS-Cocoapods */;
+			targetProxy = 1F6A2F2F1BDC9EB5009637BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F6A2EF11BDC9E14009637BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F6A2EF21BDC9E14009637BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F6A2F0D1BDC9E14009637BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		1F6A2F0E1BDC9E14009637BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F6A2F101BDC9E14009637BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 585CC800CC91409FA17DFB6D /* Pods-tvOS-Cocoapods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "tvOS-Cocoapods/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.tvOS-Cocoapods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F6A2F111BDC9E14009637BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6081852A4F801BD85C2FCFDB /* Pods-tvOS-Cocoapods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "tvOS-Cocoapods/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.tvOS-Cocoapods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1F6A2F131BDC9E14009637BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DB9CA249854B8A17F86D52A /* Pods-tvOS-Cocoapods-QuickTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "tvOS-CocoapodsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.tvOS-CocoapodsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOS-Cocoapods.app/tvOS-Cocoapods";
+			};
+			name = Debug;
+		};
+		1F6A2F141BDC9E14009637BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BA19769DB072CADDFCF9339 /* Pods-tvOS-Cocoapods-QuickTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "tvOS-CocoapodsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.tvOS-CocoapodsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOS-Cocoapods.app/tvOS-Cocoapods";
+			};
+			name = Release;
+		};
+		1F6A2F161BDC9E14009637BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90381B062D0E1524978897B6 /* Pods-tvOS-Cocoapods-QuickUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "tvOS-CocoapodsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.tvOS-CocoapodsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "tvOS-Cocoapods";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1F6A2F171BDC9E14009637BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4799387E260FBB1405F1BBAB /* Pods-tvOS-Cocoapods-QuickUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "tvOS-CocoapodsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.tvOS-CocoapodsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "tvOS-Cocoapods";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		1F6A2F291BDC9EB0009637BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 727DEE575179E8769A2EA128 /* Pods-tvOS-Cocoapods-NimbleUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "tvOS-CocoapodsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.tvOS-CocoapodsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "tvOS-Cocoapods";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1F6A2F2A1BDC9EB0009637BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E3BF0C8CEFB26F329B4EC94 /* Pods-tvOS-Cocoapods-NimbleUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "tvOS-CocoapodsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.tvOS-CocoapodsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "tvOS-Cocoapods";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		1F6A2F361BDC9EB5009637BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42AF01ADE5E57FB7D04A5252 /* Pods-tvOS-Cocoapods-NimbleTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "tvOS-CocoapodsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.tvOS-CocoapodsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOS-Cocoapods.app/tvOS-Cocoapods";
+			};
+			name = Debug;
+		};
+		1F6A2F371BDC9EB5009637BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAB8572F62CA39C3A709BA20 /* Pods-tvOS-Cocoapods-NimbleTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "tvOS-CocoapodsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.tvOS-CocoapodsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOS-Cocoapods.app/tvOS-Cocoapods";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F6A2EE51BDC9E14009637BC /* Build configuration list for PBXProject "tvOS-Cocoapods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6A2F0D1BDC9E14009637BC /* Debug */,
+				1F6A2F0E1BDC9E14009637BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F6A2F0F1BDC9E14009637BC /* Build configuration list for PBXNativeTarget "tvOS-Cocoapods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6A2F101BDC9E14009637BC /* Debug */,
+				1F6A2F111BDC9E14009637BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F6A2F121BDC9E14009637BC /* Build configuration list for PBXNativeTarget "tvOS-Cocoapods-QuickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6A2F131BDC9E14009637BC /* Debug */,
+				1F6A2F141BDC9E14009637BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F6A2F151BDC9E14009637BC /* Build configuration list for PBXNativeTarget "tvOS-Cocoapods-QuickUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6A2F161BDC9E14009637BC /* Debug */,
+				1F6A2F171BDC9E14009637BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F6A2F281BDC9EB0009637BC /* Build configuration list for PBXNativeTarget "tvOS-Cocoapods-NimbleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6A2F291BDC9EB0009637BC /* Debug */,
+				1F6A2F2A1BDC9EB0009637BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F6A2F351BDC9EB5009637BC /* Build configuration list for PBXNativeTarget "tvOS-Cocoapods-NimbleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6A2F361BDC9EB5009637BC /* Debug */,
+				1F6A2F371BDC9EB5009637BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F6A2EE21BDC9E14009637BC /* Project object */;
+}
