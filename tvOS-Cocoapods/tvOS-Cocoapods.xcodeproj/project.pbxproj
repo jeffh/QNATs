@@ -16,9 +16,7 @@
 		1F6A2F1B1BDC9E7E009637BC /* QuickIntegrationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2F191BDC9E7E009637BC /* QuickIntegrationSpec.swift */; };
 		1F6A2F1E1BDC9E91009637BC /* NimbleIntegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2F1C1BDC9E91009637BC /* NimbleIntegrationUITests.swift */; };
 		1F6A2F1F1BDC9E91009637BC /* QuickIntegrationUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2F1D1BDC9E91009637BC /* QuickIntegrationUISpec.swift */; };
-		1F6A2F241BDC9EB0009637BC /* QuickIntegrationUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2F1D1BDC9E91009637BC /* QuickIntegrationUISpec.swift */; };
 		1F6A2F251BDC9EB0009637BC /* NimbleIntegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2F1C1BDC9E91009637BC /* NimbleIntegrationUITests.swift */; };
-		1F6A2F311BDC9EB5009637BC /* QuickIntegrationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2F191BDC9E7E009637BC /* QuickIntegrationSpec.swift */; };
 		1F6A2F321BDC9EB5009637BC /* NimbleIntegrationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A2F181BDC9E7E009637BC /* NimbleIntegrationTest.swift */; };
 		6CB02C87BC73C684BCD415B5 /* Pods_tvOS_Cocoapods_NimbleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC024BF0307168E76401B04D /* Pods_tvOS_Cocoapods_NimbleUITests.framework */; };
 		B1324B483DCEAA49088EAE09 /* Pods_tvOS_Cocoapods_QuickUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F08322E606ECC7B1FC241E8 /* Pods_tvOS_Cocoapods_QuickUITests.framework */; };
@@ -643,7 +641,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F6A2F241BDC9EB0009637BC /* QuickIntegrationUISpec.swift in Sources */,
 				1F6A2F251BDC9EB0009637BC /* NimbleIntegrationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -652,7 +649,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F6A2F311BDC9EB5009637BC /* QuickIntegrationSpec.swift in Sources */,
 				1F6A2F321BDC9EB5009637BC /* NimbleIntegrationTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
