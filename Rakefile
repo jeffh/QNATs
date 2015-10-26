@@ -253,7 +253,7 @@ namespace :osx do
     desc "Runs tests for carthage in osx with App Bundle, Unit Test Bundle, UI Test Bundle for Quick"
     task :quick => [:print_versions] do
       shell.cd('OSX-Carthage', "Testing OSX-Carthage (Quick)") do
-        with_carthage(shell, :osx, [nimble, quick]) do
+        with_carthage(shell, :macosx, [nimble, quick]) do
           shell.xcodebuild("-scheme OSX-Carthage-Quick clean test")
           shell.ok
         end
@@ -263,7 +263,7 @@ namespace :osx do
     desc "Runs tests for carthage in osx with App Bundle, Unit Test Bundle, UI Test Bundle for Nimble"
     task :nimble => [:print_versions] do
       shell.cd('OSX-Carthage', "Testing OSX-Carthage (Nimble)") do
-        with_carthage(shell, :osx, [nimble, quick]) do
+        with_carthage(shell, :macosx, [nimble, quick]) do
           shell.xcodebuild("-scheme OSX-Carthage-Nimble clean test")
           shell.ok
         end
