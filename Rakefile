@@ -357,4 +357,4 @@ task :clean do
   end
 end
 
-task default: %w[ios osx]
+task default: %w[ios osx tvos]
