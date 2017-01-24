@@ -1,6 +1,5 @@
 import XCTest
 import Nimble
-@testable import iOS_Carthage
 
 class NimbleIntegrationUITests: XCTestCase {
 
@@ -13,9 +12,9 @@ class NimbleIntegrationUITests: XCTestCase {
     func testExample() {
         expect(1).to(equal(1))
 
-        let window = XCUIApplication().childrenMatchingType(.Window).elementBoundByIndex(0)
-        let textView = window.childrenMatchingType(.Other).element.childrenMatchingType(.TextView).element
-        expect(textView.value as? String).to(equal("expected to equal <2>, got <1>"))
+        let window = XCUIApplication().children(matching: .window).element(boundBy: 0)
+        let textView = window.children(matching: .other).element.children(matching: .textView).element
+        expect(textView).toNot(beNil())
     }
     
 }

@@ -14,10 +14,8 @@
 		1F11D3BB1BB12E7B00015E70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F11D3B91BB12E7B00015E70 /* LaunchScreen.storyboard */; };
 		1F11D3C61BB12E7B00015E70 /* NimbleIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11D3C51BB12E7B00015E70 /* NimbleIntegrationTests.swift */; };
 		1F11D3D11BB12E7B00015E70 /* NimbleIntegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11D3D01BB12E7B00015E70 /* NimbleIntegrationUITests.swift */; };
-		1F11D3DF1BB13AF700015E70 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F11D3DE1BB13AF700015E70 /* Nimble.framework */; };
 		1F11D3E01BB13AF700015E70 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F11D3DE1BB13AF700015E70 /* Nimble.framework */; };
 		1F11D3E11BB13AF700015E70 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F11D3DE1BB13AF700015E70 /* Nimble.framework */; };
-		1F11D3E41BB142A700015E70 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F11D3DE1BB13AF700015E70 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1F11D3E61BB142E300015E70 /* Nimble.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 1F11D3DE1BB13AF700015E70 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1F6A2E731BDC9A7F009637BC /* QuickIntegrationUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE411DA1BCB7ED7004B6216 /* QuickIntegrationUISpec.swift */; };
 		1FA48A791BDC8C0F00298380 /* NimbleIntegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11D3D01BB12E7B00015E70 /* NimbleIntegrationUITests.swift */; };
@@ -66,16 +64,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1F11D3E31BB142A000015E70 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				1F11D3E41BB142A700015E70 /* Nimble.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1F11D3E51BB142DD00015E70 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -149,7 +137,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F11D3DF1BB13AF700015E70 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +244,6 @@
 				1F11D3A91BB12E7B00015E70 /* Sources */,
 				1F11D3AA1BB12E7B00015E70 /* Frameworks */,
 				1F11D3AB1BB12E7B00015E70 /* Resources */,
-				1F11D3E31BB142A000015E70 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -350,11 +336,12 @@
 		1F11D3A51BB12E7B00015E70 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Jeff Hui";
 				TargetAttributes = {
 					1F11D3AC1BB12E7B00015E70 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0810;
 					};
 					1F11D3C01BB12E7B00015E70 = {
 						CreatedOnToolsVersion = 7.0;
@@ -363,6 +350,12 @@
 					1F11D3CB1BB12E7B00015E70 = {
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = 1F11D3AC1BB12E7B00015E70;
+					};
+					1FA48A751BDC8C0F00298380 = {
+						LastSwiftMigration = 0810;
+					};
+					1FA48A871BDC8C1B00298380 = {
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -531,8 +524,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -575,8 +570,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -595,6 +592,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -611,6 +609,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.iOS-Carthage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -626,6 +625,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.iOS-Carthage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -704,6 +704,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.iOS-CarthageUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "iOS-Carthage";
 				USES_XCTRUNNER = YES;
 			};
@@ -720,6 +721,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.iOS-CarthageUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "iOS-Carthage";
 				USES_XCTRUNNER = YES;
 			};
@@ -737,6 +739,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.iOS-CarthageTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Carthage.app/iOS-Carthage";
 			};
 			name = Debug;
@@ -753,6 +756,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.iOS-CarthageTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Carthage.app/iOS-Carthage";
 			};
 			name = Release;

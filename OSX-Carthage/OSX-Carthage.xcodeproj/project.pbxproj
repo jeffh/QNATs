@@ -25,7 +25,7 @@
 		1FEE9A721BBBD1410014DF82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FEE9A701BBBD1410014DF82 /* Main.storyboard */; };
 		1FEE9A7D1BBBD1410014DF82 /* NimbleIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE9A7C1BBBD1410014DF82 /* NimbleIntegrationTests.swift */; };
 		1FEE9A881BBBD1410014DF82 /* NimbleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE9A871BBBD1410014DF82 /* NimbleUITests.swift */; };
-		1FEE9A9E1BBBD3850014DF82 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEE9A9D1BBBD3850014DF82 /* Nimble.framework */; };
+		1FEE9A9E1BBBD3850014DF82 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEE9A9D1BBBD3850014DF82 /* Nimble.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		1FEE9A9F1BBBD3880014DF82 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEE9A9D1BBBD3850014DF82 /* Nimble.framework */; };
 		1FEE9AA01BBBD38A0014DF82 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEE9A9D1BBBD3850014DF82 /* Nimble.framework */; };
 		1FEE9AA21BBBD3960014DF82 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1FEE9A9D1BBBD3850014DF82 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -347,11 +347,18 @@
 		1FEE9A5F1BBBD1410014DF82 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Jeff Hui";
 				TargetAttributes = {
+					1FA48ABC1BDC910600298380 = {
+						LastSwiftMigration = 0810;
+					};
+					1FA48ACD1BDC910E00298380 = {
+						LastSwiftMigration = 0810;
+					};
 					1FEE9A661BBBD1410014DF82 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0810;
 					};
 					1FEE9A771BBBD1410014DF82 = {
 						CreatedOnToolsVersion = 7.0;
@@ -518,6 +525,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.OSX-CarthageUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "OSX-Carthage";
 				USES_XCTRUNNER = YES;
 			};
@@ -535,6 +543,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.OSX-CarthageUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "OSX-Carthage";
 				USES_XCTRUNNER = YES;
 			};
@@ -553,6 +562,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.OSX-CarthageTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSX-Carthage.app/Contents/MacOS/OSX-Carthage";
 			};
 			name = Debug;
@@ -570,6 +580,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.OSX-CarthageTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSX-Carthage.app/Contents/MacOS/OSX-Carthage";
 			};
 			name = Release;
@@ -587,8 +598,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -631,8 +644,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -651,6 +666,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -658,6 +674,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_MODULES_AUTOLINK = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -668,6 +685,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.OSX-Carthage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -675,6 +693,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_MODULES_AUTOLINK = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -685,6 +704,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.OSX-Carthage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
