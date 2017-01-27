@@ -679,6 +679,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"\"$(PLATFORM_DIR)/Developer/Library/Frameworks\"",
 				);
 				INFOPLIST_FILE = "OSX-Carthage/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -698,6 +699,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"\"$(PLATFORM_DIR)/Developer/Library/Frameworks\"",
 				);
 				INFOPLIST_FILE = "OSX-Carthage/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
