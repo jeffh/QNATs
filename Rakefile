@@ -160,6 +160,7 @@ def with_cocoapods(shell)
   yield
 end
 
+ios_destination = "'platform=iOS Simulator,name=iPhone 7'"
 default_print_types = [:group, :errors, :info]
 shell = Shell.new(print_types: default_print_types)
 nimble = Dependency.new(shell, 'Nimble', './Vendor', 'https://github.com/Quick/Nimble.git', 'master')
@@ -205,7 +206,7 @@ namespace :ios do
     task :quick => [:print_versions] do
       shell.cd('iOS-Carthage', "Testing iOS-Carthage (Quick)") do
         with_carthage(shell, :ios, [nimble, quick]) do
-          shell.xcodebuild("-scheme iOS-Carthage-Quick -sdk iphonesimulator clean test")
+          shell.xcodebuild("-scheme iOS-Carthage-Quick -sdk iphonesimulator -destination #{ios_destination} clean test")
           shell.ok
         end
       end
@@ -215,7 +216,7 @@ namespace :ios do
     task :nimble => [:print_versions] do
       shell.cd('iOS-Carthage', "Testing iOS-Carthage (Nimble)") do
         with_carthage(shell, :ios, [nimble, quick]) do
-          shell.xcodebuild("-scheme iOS-Carthage-Nimble -sdk iphonesimulator clean test")
+          shell.xcodebuild("-scheme iOS-Carthage-Nimble -sdk iphonesimulator -destination #{ios_destination} clean test")
           shell.ok
         end
       end
@@ -228,7 +229,7 @@ namespace :ios do
     task :quick => [:print_versions] do
       shell.cd('iOS-Cocoapods', "Testing iOS-Cocoapods (Quick)") do
         with_cocoapods(shell) do
-          shell.xcodebuild("-scheme iOS-Cocoapods-Quick -workspace iOS-Cocoapods.xcworkspace -sdk iphonesimulator clean test")
+          shell.xcodebuild("-scheme iOS-Cocoapods-Quick -workspace iOS-Cocoapods.xcworkspace -sdk iphonesimulator -destination #{ios_destination} clean test")
           shell.ok
         end
       end
@@ -238,7 +239,7 @@ namespace :ios do
     task :nimble => [:print_versions] do
       shell.cd('iOS-Cocoapods', "Testing iOS-Cocoapods (Nimble)") do
         with_cocoapods(shell) do
-          shell.xcodebuild("-scheme iOS-Cocoapods-Nimble -workspace iOS-Cocoapods.xcworkspace -sdk iphonesimulator clean test")
+          shell.xcodebuild("-scheme iOS-Cocoapods-Nimble -workspace iOS-Cocoapods.xcworkspace -sdk iphonesimulator -destination #{ios_destination} clean test")
           shell.ok
         end
       end
