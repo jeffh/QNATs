@@ -14,7 +14,7 @@ class NimbleIntegrationUITests: XCTestCase {
 
         let window = XCUIApplication().children(matching: .window).element(boundBy: 0)
         let textView = window.children(matching: .other).element.children(matching: .textView).element
-        expect(textView).toNot(beNil())
+        expect(textView.value as? String).to(equal("expected to equal <2>, got <1>"))
     }
     
 }

@@ -15,8 +15,8 @@ class QuickIntegrationUISpec: QuickSpec {
             it("should work") {
                 expect(1).to(equal(1))
 
-                let window = XCUIApplication().childrenMatchingType(.Window).elementBoundByIndex(0)
-                let textView = window.childrenMatchingType(.Other).element.childrenMatchingType(.TextView).element
+                let window = XCUIApplication().children(matching: .window).element(boundBy: 0)
+                let textView = window.children(matching: .other).element.children(matching: .textView).element
                 expect(textView.value as? String).to(equal("expected to equal <2>, got <1>"))
             }
         }

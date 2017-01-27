@@ -945,6 +945,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F27AD0B9814D2F3A2D0E179D /* Pods-iOS-Cocoapods-NimbleUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "iOS-CocoapodsUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -965,6 +966,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 438C4CEEDFA2441B24AF5A8E /* Pods-iOS-Cocoapods-NimbleUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "iOS-CocoapodsUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -985,6 +987,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B329B7BC7592E3004C258F78 /* Pods-iOS-Cocoapods-NimbleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "iOS-CocoapodsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1005,6 +1008,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 421AEF657A97E310F9732326 /* Pods-iOS-Cocoapods-NimbleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "iOS-CocoapodsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

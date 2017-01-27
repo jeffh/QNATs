@@ -18,6 +18,8 @@
 		1F11D3E11BB13AF700015E70 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F11D3DE1BB13AF700015E70 /* Nimble.framework */; };
 		1F11D3E61BB142E300015E70 /* Nimble.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 1F11D3DE1BB13AF700015E70 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1F6A2E731BDC9A7F009637BC /* QuickIntegrationUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE411DA1BCB7ED7004B6216 /* QuickIntegrationUISpec.swift */; };
+		1F74A5BE1E3B5A5900C03DB8 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F11D3DE1BB13AF700015E70 /* Nimble.framework */; };
+		1F74A5C01E3B5BA900C03DB8 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F11D3DE1BB13AF700015E70 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1FA48A791BDC8C0F00298380 /* NimbleIntegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11D3D01BB12E7B00015E70 /* NimbleIntegrationUITests.swift */; };
 		1FA48A7C1BDC8C0F00298380 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F11D3DE1BB13AF700015E70 /* Nimble.framework */; };
 		1FA48A801BDC8C0F00298380 /* Nimble.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 1F11D3DE1BB13AF700015E70 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -74,6 +76,16 @@
 				1FE411E01BCB7F22004B6216 /* Quick.framework in Copy Files */,
 			);
 			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F74A5BF1E3B5BA300C03DB8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1F74A5C01E3B5BA900C03DB8 /* Nimble.framework in CopyFiles */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1FA48A7F1BDC8C0F00298380 /* Copy Files */ = {
@@ -137,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F74A5BE1E3B5A5900C03DB8 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +257,7 @@
 				1F11D3A91BB12E7B00015E70 /* Sources */,
 				1F11D3AA1BB12E7B00015E70 /* Frameworks */,
 				1F11D3AB1BB12E7B00015E70 /* Resources */,
+				1F74A5BF1E3B5BA300C03DB8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -604,6 +618,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"\"$(PLATFORM_DIR)/Developer/Library/Frameworks\"",
 				);
 				INFOPLIST_FILE = "iOS-Carthage/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -620,6 +635,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"\"$(PLATFORM_DIR)/Developer/Library/Frameworks\"",
 				);
 				INFOPLIST_FILE = "iOS-Carthage/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -1,6 +1,5 @@
 import XCTest
 import Nimble
-@testable import iOS_Cocoapods
 
 class NimbleIntegrationUITests: XCTestCase {
 
