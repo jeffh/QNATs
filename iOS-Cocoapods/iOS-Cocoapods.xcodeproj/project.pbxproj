@@ -957,6 +957,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.iOS-CocoapodsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "iOS-Cocoapods";
 				USES_XCTRUNNER = YES;
 			};
@@ -978,6 +979,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.iOS-CocoapodsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "iOS-Cocoapods";
 				USES_XCTRUNNER = YES;
 			};
@@ -1000,6 +1002,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.iOS-CocoapodsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Cocoapods.app/iOS-Cocoapods";
 			};
 			name = Debug;
@@ -1021,6 +1024,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.jeffhui.iOS-CocoapodsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Cocoapods.app/iOS-Cocoapods";
 			};
 			name = Release;
