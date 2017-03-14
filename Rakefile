@@ -185,6 +185,7 @@ def with_cocoapods(shell, dependencies)
 end
 
 ios_destination = "'platform=iOS Simulator,name=iPhone 7'"
+tvos_destination = "'platform=tvOS Simulator,name=Apple TV 1080p'"
 default_print_types = [:group, :errors, :info]
 shell = Shell.new(print_types: default_print_types)
 nimble = Dependency.new(shell, 'Nimble', './Vendor', 'https://github.com/Quick/Nimble.git', 'master')
@@ -328,7 +329,7 @@ namespace :tvos do
     task :quick => [:print_versions] do
       shell.cd('tvOS-Carthage', "Testing tvOS-Carthage (Quick)") do
         with_carthage(shell, :tvos, [nimble, quick]) do
-          shell.xcodebuild("-scheme tvOS-Carthage-Quick -sdk appletvsimulator clean test")
+          shell.xcodebuild("-scheme tvOS-Carthage-Quick -sdk appletvsimulator -destination #{tvos_destination} 'Apple TV 1080p' clean test")
           shell.ok
         end
       end
@@ -338,7 +339,7 @@ namespace :tvos do
     task :nimble => [:print_versions] do
       shell.cd('tvOS-Carthage', "Testing tvOS-Carthage (Nimble)") do
         with_carthage(shell, :tvos, [nimble, quick]) do
-          shell.xcodebuild("-scheme tvOS-Carthage-Nimble -sdk appletvsimulator clean test")
+          shell.xcodebuild("-scheme tvOS-Carthage-Nimble -sdk appletvsimulator -destination #{tvos_destination} clean test")
           shell.ok
         end
       end
@@ -351,7 +352,7 @@ namespace :tvos do
     task :quick => [:print_versions] do
       shell.cd('tvOS-Cocoapods', "Testing tvOS-Cocoapods (Quick)") do
         with_cocoapods(shell, [nimble, quick]) do
-          shell.xcodebuild("-scheme tvOS-Cocoapods-Quick -workspace tvOS-Cocoapods.xcworkspace -sdk appletvsimulator clean test")
+          shell.xcodebuild("-scheme tvOS-Cocoapods-Quick -workspace tvOS-Cocoapods.xcworkspace -sdk appletvsimulator -destination #{tvos_destination} clean test")
           shell.ok
         end
       end
@@ -361,7 +362,7 @@ namespace :tvos do
     task :nimble => [:print_versions] do
       shell.cd('tvOS-Cocoapods', "Testing tvOS-Cocoapods (Nimble)") do
         with_cocoapods(shell, [nimble]) do
-          shell.xcodebuild("-scheme tvOS-Cocoapods-Nimble -workspace tvOS-Cocoapods.xcworkspace -sdk appletvsimulator clean test")
+          shell.xcodebuild("-scheme tvOS-Cocoapods-Nimble -workspace tvOS-Cocoapods.xcworkspace -sdk appletvsimulator -destination #{tvos_destination} clean test")
           shell.ok
         end
       end

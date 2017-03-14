@@ -3,31 +3,23 @@ platform :ios, '9.0'
 
 target 'iOS-Cocoapods' do
   # pod 'Quick', path: '../Vendor/Quick' # Quick doesn't support running without XCTest
-  pod 'Nimble', git: '../Vendor/Nimble/', branch: 'master'
+  pod 'Nimble', path: '../Vendor/Nimble/'
 end
 
 target 'iOS-Cocoapods-QuickTests' do
-  pod 'Quick', git: '../Vendor/Quick', branch: 'master'
-  pod 'Nimble', git: '../Vendor/Nimble/', branch: 'master'
+  pod 'Quick', path: '../Vendor/Quick'
+  pod 'Nimble', path: '../Vendor/Nimble/'
 end
 
 target 'iOS-Cocoapods-QuickUITests' do
-  pod 'Quick', git: '../Vendor/Quick', branch: 'master'
-  pod 'Nimble', git: '../Vendor/Nimble/', branch: 'master'
+  pod 'Quick', path: '../Vendor/Quick'
+  pod 'Nimble', path: '../Vendor/Nimble/'
 end
 
 target 'iOS-Cocoapods-NimbleTests' do
-  pod 'Nimble', git: '../Vendor/Nimble/', branch: 'master'
+  pod 'Nimble', path: '../Vendor/Nimble/'
 end
 
 target 'iOS-Cocoapods-NimbleUITests' do
-  pod 'Nimble', git: '../Vendor/Nimble/', branch: 'master'
-end
-
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      config.build_settings['SWIFT_VERSION'] = '3.0'
-    end
-  end
+  pod 'Nimble', path: '../Vendor/Nimble/'
 end
